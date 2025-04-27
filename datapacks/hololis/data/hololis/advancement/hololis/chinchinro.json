@@ -1,7 +1,7 @@
 {
   "display": {
     "title": "セーフな旗",
-    "description": "みんなでチンチロをやる？",
+    "description": "みんなでチンチロの場を作ろう",
     "icon": {
       "id": "minecraft:white_banner",
       "components": {
@@ -14,8 +14,7 @@
       }
     },
     "announce_to_chat": true,
-    "show_toast": true,
-    "hidden": true
+    "show_toast": true
   },
   "criteria": {
     "chi": {
