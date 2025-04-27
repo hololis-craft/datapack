@@ -1,0 +1,2 @@
+scoreboard objectives add LavaFired dummy
+scoreboard objectives add DeathCount deathCount

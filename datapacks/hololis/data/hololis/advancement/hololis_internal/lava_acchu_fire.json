@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "flags": {
+            "is_on_fire": true
+          },
+          "location": {
+            "block": {
+              "blocks": "minecraft:lava"
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis_internal/root",
+  "rewards": {
+    "function": "hololis:hololis/advancement/lava_acchu/on_fire"
+  }
+}
