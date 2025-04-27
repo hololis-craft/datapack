@@ -1,0 +1,3 @@
+cd world/datapacks/
+rm hololis
+put -R datapacks/hololis/ .

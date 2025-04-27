@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": {
+      "translate": "運営"
+    },
+    "description": "運営の人々を？？する",
+    "icon": {
+      "id": "minecraft:bedrock"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "frame": "goal"
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "parent": "hololis:hololis/root"
+}

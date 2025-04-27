@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": {
+      "translate": "ホロメン"
+    },
+    "description": "ホロライブのメンバーにまつわる何か",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "profile": {
+          "name": "supernenechii"
+        }
+      }
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "background": "minecraft:textures/block/light_blue_wool.png"
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

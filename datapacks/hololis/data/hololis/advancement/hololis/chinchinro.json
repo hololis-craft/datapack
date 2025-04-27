@@ -1,0 +1,84 @@
+{
+  "display": {
+    "title": "セーフな旗",
+    "description": "みんなでチンチロをやる？",
+    "icon": {
+      "id": "minecraft:white_banner",
+      "components": {
+        "minecraft:banner_patterns": [
+          { "color": "red", "pattern": "minecraft:stripe_top" },
+          { "color": "red", "pattern": "minecraft:stripe_middle" },
+          { "color": "red", "pattern": "minecraft:stripe_center" },
+          { "color": "white", "pattern": "minecraft:border" }
+        ]
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": true
+  },
+  "criteria": {
+    "chi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:white_banner",
+            "components": {
+              "minecraft:banner_patterns": [
+                { "color": "red", "pattern": "minecraft:stripe_top" },
+                { "color": "red", "pattern": "minecraft:stripe_middle" },
+                { "color": "red", "pattern": "minecraft:stripe_center" },
+                { "color": "white", "pattern": "minecraft:border" }
+              ]
+            },
+            "count": 2
+          }
+        ]
+      }
+    },
+    "nn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:white_banner",
+            "components": {
+              "minecraft:banner_patterns": [
+                { "color": "red", "pattern": "minecraft:half_horizontal" },
+                { "color": "red", "pattern": "minecraft:diagonal_up_right" },
+                { "color": "white", "pattern": "minecraft:stripe_downleft" },
+                { "color": "white", "pattern": "minecraft:border" },
+                { "color": "white", "pattern": "minecraft:stripe_top" }
+              ]
+            },
+            "count": 2
+          }
+        ]
+      }
+    },
+    "ro": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:white_banner",
+            "components": {
+              "minecraft:banner_patterns": [
+                { "color": "white", "pattern": "minecraft:stripe_middle" },
+                { "color": "red", "pattern": "minecraft:stripe_left" },
+                { "color": "red", "pattern": "minecraft:stripe_right" },
+                { "color": "white", "pattern": "minecraft:stripe_bottom" },
+                { "color": "white", "pattern": "minecraft:stripe_top" },
+                { "color": "white", "pattern": "minecraft:border" }
+              ]
+            },
+            "count": 1
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["chi", "nn", "ro"]],
+  "parent": "hololis:hololis/casino_medal"
+}

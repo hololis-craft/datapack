@@ -1,0 +1,44 @@
+{
+  "display": {
+    "title": {
+      "translate": "呪っちゃうぞ！",
+      "color": "dark_purple"
+    },
+    "description": {
+      "translate": "おばけを倒す",
+      "color": "#f758ed"
+    },
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "profile": {
+          "id": [-1897296269, 234443403, -1524128035, -2078221111],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBhZjcyZTNmODkyZDQxZTVmZWExMDMyNDE4OWQwM2NjNTA1ZTY3Yjk3YzRiNTc4NDA5N2RkMGU3ODA2ZWVkZiJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{UUID:[I;-1806163398,-479443117,-1723814603,1652218850]}"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis/ops",
+  "rewards": {
+    "function": "hololis:hololis/advancement/kill_obake3"
+  }
+}

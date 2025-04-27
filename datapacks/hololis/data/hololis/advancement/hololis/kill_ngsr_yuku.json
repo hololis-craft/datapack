@@ -1,0 +1,41 @@
+{
+  "display": {
+    "title": {
+      "translate": "違法系運営",
+      "color": "white"
+    },
+    "description": {
+      "translate": "ゆくさんを倒す、どうやって？",
+      "color": "white"
+    },
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "profile": {
+          "id": [1502885517, -533899406, -1731791992, -946511535],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVkYWM3YTgxY2U1YzU2MTY3ZWU2NTA2OWVmYjg1MjAzZTg0N2U1YzQ1MDk0NTdjMTJiNWIwZTBjYzdhMDM3MCJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{UUID:[I;-1310603896,-1821357984,-1327455163,-1800756660]}"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis/ops"
+}

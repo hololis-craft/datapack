@@ -1,0 +1,18 @@
+{
+  "display": {
+    "title": {
+      "text": "あっちゅ！あっちゅ！",
+      "color": "#ff4f1f"
+    },
+    "description": "マグマと友達になり、すべてを失う",
+    "icon": {
+      "id": "minecraft:lava_bucket"
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "hololis:holomem/root"
+}

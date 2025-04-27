@@ -1,0 +1,34 @@
+{
+  "display": {
+    "title": {
+      "text": "だって僕は星だから",
+      "color": "#50f9ff"
+    },
+    "description": "天高く輝く星になる",
+    "icon": {
+      "id": "minecraft:nether_star",
+      "components": {
+        "enchantment_glint_override": true
+      }
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "can_see_sky": true,
+            "position": {
+              "y": {
+                "min": 2500
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:holomem/root"
+}

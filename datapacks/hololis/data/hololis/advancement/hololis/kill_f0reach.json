@@ -1,0 +1,38 @@
+{
+  "display": {
+    "title": {
+      "translate": "コマンドは使わないでね",
+      "color": "gold"
+    },
+    "description": "マンさんを倒す",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "profile": {
+          "id": [-791865712, -366455513, -1308143484, 1439633569],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI4ZjM5NmU1OGYwM2QxMTJkNjUyMDE1NmQ3OWJhOGNhODAwYjJiYzQyOTM1YTc1YTdkYTlhMzAwMThlNTQ4YSJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{UUID:[I;589894591,1732723188,-1396304885,924487173]}"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis/ops"
+}
