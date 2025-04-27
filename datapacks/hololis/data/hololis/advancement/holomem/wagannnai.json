@@ -4,7 +4,7 @@
       "text": "わがった！わがんない！",
       "color": "#ff0000"
     },
-    "description": "TNTは障害物がない限り下に落ちる",
+    "description": "TNTは障害物がない限り下に落ちる、下に何かを置いてはいけない",
     "icon": {
       "id": "minecraft:trapped_chest"
     }
