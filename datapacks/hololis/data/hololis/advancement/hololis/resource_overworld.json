@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "資源オーバーワールド",
+    "description": "OK、地面をくり抜こう",
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:res"
+      }
+    }
+  },
+  "parent": "hololis:hololis/resource"
+}

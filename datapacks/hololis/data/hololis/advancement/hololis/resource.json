@@ -1,0 +1,32 @@
+{
+  "display": {
+    "title": "資源サーバ",
+    "description": "何度でも復活するさ",
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:res"
+      }
+    },
+    "nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:res_nether"
+      }
+    },
+    "the_end": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:res_the_end"
+      }
+    }
+  },
+  "parent": "hololis:hololis/root"
+}

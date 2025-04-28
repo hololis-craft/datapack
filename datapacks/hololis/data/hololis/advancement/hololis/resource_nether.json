@@ -1,0 +1,20 @@
+{
+  "display": {
+    "title": "資源ネザー",
+    "description": "あの苦しみから解放を…",
+    "icon": {
+      "id": "minecraft:netherrack"
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:res_nether"
+      }
+    }
+  },
+  "parent": "hololis:hololis/resource"
+}
