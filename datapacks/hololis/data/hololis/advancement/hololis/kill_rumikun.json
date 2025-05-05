@@ -1,0 +1,45 @@
+{
+  "display": {
+    "title": {
+      "translate": "帝国のスパイ？",
+      "color": "dark_purple"
+    },
+    "description": {
+      "translate": "ルミくんを倒す",
+      "color": "#940b8b"
+    },
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "rumikun06",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTc0NjM0MTQ4NDYwNSwKICAicHJvZmlsZUlkIiA6ICI5NjNhNzhkNDQ2NmU0MDBkYmZiMWU3MmQzZTFiNjQzOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJydW1pa3VuMDYiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTI4ZjAxZDU4Y2U1MWZkYWMyZWM1OGZlYTdiMTM5YzFmNzJhNzI4MWJjMTRhNDYxZjJmYWIyMTZmYjUxOGI2MiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+            }
+          ],
+          "id": [-1774552876, 1181630477, -1078859987, 1041982521]
+        }
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{UUID:[I;-1774552876,1181630477,-1078859987,1041982521]}"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis/ops",
+  "rewards": {
+    "function": "hololis:hololis/advancement/kill_rumikun"
+  }
+}
