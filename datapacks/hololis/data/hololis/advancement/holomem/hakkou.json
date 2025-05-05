@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "薄幸体質",
+      "color": "#65c8f6"
+    },
+    "description": [
+      { "text": "光んの？ ", "color": "#ff52c8" },
+      { "text": "…うん、そうなの", "color": "#65c8f6" }
+    ],
+    "icon": {
+      "id": "minecraft:spectral_arrow"
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "effects": {
+            "glowing": {}
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:holomem/root"
+}
