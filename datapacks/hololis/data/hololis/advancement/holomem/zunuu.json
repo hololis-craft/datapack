@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "text": "いたずらっ子",
+      "color": "#ff36de"
+    },
+    "description": "またずのー取るぞ！",
+    "icon": {
+      "id": "minecraft:creeper_head"
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:creeper_head"
+          },
+          {
+            "condition": "minecraft:location_check",
+            "offsetY": -1,
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:note_block"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "hololis:holomem/root"
+}
