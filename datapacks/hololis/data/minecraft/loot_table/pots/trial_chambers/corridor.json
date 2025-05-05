@@ -102,7 +102,7 @@
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             },
             {
@@ -115,7 +115,7 @@
             }
           ],
           "name": "minecraft:player_head",
-          "weight": 2
+          "weight": 80
         },
         {
           "type": "minecraft:item",
