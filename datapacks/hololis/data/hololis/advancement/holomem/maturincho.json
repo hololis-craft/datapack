@@ -1,0 +1,33 @@
+{
+  "display": {
+    "title": {
+      "text": "まつりんちょ",
+      "color": "#ffa227"
+    },
+    "description": "防具なしじゃ耐えられない",
+    "icon": {
+      "id": "minecraft:chainmail_chestplate"
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": { "items": "minecraft:air" },
+            "chest": { "items": "minecraft:air" },
+            "legs": { "items": "minecraft:air" },
+            "feet": { "items": "minecraft:air" }
+          }
+        },
+        "damage": {
+          "taken": {
+            "min": 20.0
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:holomem/root"
+}
