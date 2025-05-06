@@ -11,7 +11,19 @@
   },
   "criteria": {
     "": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "location": {
+            "block": {
+              "blocks": ["minecraft:lava", "minecraft:lava_cauldron"]
+            }
+          },
+          "flags": {
+            "is_on_fire": true
+          }
+        }
+      }
     }
   },
   "parent": "hololis:holomem/root"
