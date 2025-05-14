@@ -102,20 +102,20 @@
           "functions": [
             {
               "add": false,
-              "count": 64.0,
+              "count": 3.0,
               "function": "minecraft:set_count"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:profile": {
-                  "name": "NogaNekko"
+                  "name": "Noga_nekko"
                 }
               }
             }
           ],
           "name": "minecraft:player_head",
-          "weight": 80
+          "weight": 3
         },
         {
           "type": "minecraft:item",
