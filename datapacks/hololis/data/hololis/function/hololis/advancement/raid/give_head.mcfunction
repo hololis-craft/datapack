@@ -1,0 +1,1 @@
+advancement revoke @s only hololis:hololis_internal/raid_head

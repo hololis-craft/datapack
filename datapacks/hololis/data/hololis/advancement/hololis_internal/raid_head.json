@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "a"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis_internal/root",
+  "rewards": {
+    "loot": ["hololis:holomem/player_heads"],
+    "function": "hololis:hololis/advancement/raid/give_head"
+  }
+}
