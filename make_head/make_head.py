@@ -131,13 +131,15 @@ for name_tag in name_tags:
                         "function": "minecraft:set_components",
                         "components": {
                             "minecraft:profile": {
+                                "name": name_tag,
                                 "properties": [
                                     {
                                         "name": "textures",
                                         "value": texture_value,
                                     }
-                                ]
-                            }
+                                ],
+                            },
+                            "minecraft:custom_name": f'"{name_tag}\'s Head"',
                         },
                     }
                 ],
