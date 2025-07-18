@@ -14,7 +14,7 @@
     },
     "announce_to_chat": false,
     "show_toast": false,
-    "background": "minecraft:textures/block/light_blue_wool.png"
+    "background": "minecraft:block/light_blue_wool"
   },
   "criteria": {
     "": {

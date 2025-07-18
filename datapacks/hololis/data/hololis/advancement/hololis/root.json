@@ -21,7 +21,7 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false,
-    "background": "minecraft:textures/block/orange_wool.png"
+    "background": "minecraft:block/orange_wool"
   },
   "criteria": {
     "tick": {
