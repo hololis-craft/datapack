@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "text": "エロ同人にはされない",
+      "color": "#f0f1ff"
+    },
+    "description": "近くでクンクンしてくるやつを倒す",
+    "icon": {
+      "id": "minecraft:sculk_shrieker"
+    },
+    "hidden": true
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:warden",
+          "distance": {
+            "absolute": {
+              "min": 0,
+              "max": 4
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:holomem/root"
+}
