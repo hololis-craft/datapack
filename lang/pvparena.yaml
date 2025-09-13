@@ -1,0 +1,655 @@
+__version__: 2.0.0
+arena:
+  create:
+    done: "アリーナ '%1%' (ゴール: %2%) を作成しました！"
+  disable:
+    done: アリーナを無効化しました！
+  edit:
+    disabled: アリーナ '%1%' の編集モードを無効にしました
+    enabled: アリーナ '%1%' の編集モードを有効にしました
+  enable:
+    done: アリーナを有効化しました！
+    fail: "&cアリーナの読み込みに失敗しました。設定を確認してください。"
+  arenalist: "アリーナ一覧: &a%1%&r"
+  reload:
+    done: アリーナをリロードしました！
+  remove:
+    done: "アリーナを削除しました: &e%1%&r"
+  startingin: プレイヤーが揃いました。%1%後に開始します！
+  start:
+    done: アリーナを強制開始しました！
+  stop:
+    done: アリーナを強制停止しました！
+cmd:
+  blacklist:
+    added: "&a%1%&r を &e%2%&r のブラックリストに追加しました！"
+    allcleared: すべてのブラックリストをクリアしました！
+    cleared: ブラックリスト &e%1%&r をクリアしました！
+    help: "使用法: /pa blacklist clear | /pa blacklist <type> <clear|add|remove> <id>"
+    removed: "&a%1%&r を &e%2%&r のブラックリストから削除しました！"
+    show: "ブラックリスト &e%1%&r:"
+  whitelist:
+    added: "&a%1%&r を &e%2%&r のホワイトリストに追加しました！"
+    allcleared: すべてのホワイトリストをクリアしました！
+    cleared: ホワイトリスト &e%1%&r をクリアしました！
+    help: "使用法: /pa whitelist clear | /pa whitelist <type> <clear|add|remove> <id>"
+    removed: "&a%1%&r を &e%2%&r のホワイトリストから削除しました！"
+    show: "ホワイトリスト &e%1%&r:"
+  class:
+    list: "利用可能なクラス: %1%"
+    preview: "クラス: %1% をプレビュー中です。&e/pa leave&r を実行してプレビューモードを終了します。"
+    removed: "クラスを削除しました: %1%"
+    saved: "クラスを保存しました: %1%"
+  arenaclass:
+    selected: クラスを &e%1%&r に変更しました。
+    selectedrespawn: 次のリスポーンでクラスが &e%1%&f になります。
+  classchest:
+    done: クラス %1% のアイテムを %2% の中身に設定しました。チェストの設定が完了したら、アリーナをリロードしてください！
+  goal:
+    added: "ゴールを設定しました: &a%1%&r"
+    editing: "アリーナのゴールを編集するコマンド: &a/pa <arena> goal %1%&r"
+  help:
+    message: "コマンドに関するドキュメントやヘルプはオンラインで入手できます: &9%1%&r"
+    link: https://github.com/Eredrim/pvparena
+  setowner:
+    done: "&a%1%&r がアリーナ &a%2%&r のオーナーになりました！"
+  spawn:
+    notset: "スポーンが設定されていません: &a%1%&r"
+    removed: "スポーンを削除しました: %1%"
+    set: "スポーンを設定しました: %1%"
+    setagain: "スポーンを再設定しました: %1%"
+    unknown: "スポーンが見つかりません: &a%1%&r"
+  togglemod:
+    battle: "&cBATTLEリージョンを必要とするモジュールを有効化しました！このアリーナに既にリージョンがある場合は、&r/pa <arena> !rt <region> BATTLE&r と入力してください。"
+    replacement: モジュール &a%1%&r はモジュール &a%2%&r を置き換えます。
+    disabled: "モジュールを無効にしました: &a%1%&r"
+    notremovable: モジュール &a%1%&r は削除できません。同じタイプのモジュール (%2%) で置き換える必要があります。
+    enabled: "モジュールを有効にしました: &a%1%&r"
+check:
+  done: チェック完了！エラーはありません！
+deathcause:
+  BLOCK_EXPLOSION: 爆発
+  CONTACT: サボテン
+  CUSTOM: Herobrine
+  DROWNING: 溺死
+  ENTITY_EXPLOSION: 爆発
+  FALL: 落下
+  FIRE_TICK: 火
+  FIRE: 火
+  LAVA: 溶岩
+  LIGHTNING: 雷
+  MAGIC: 魔法
+  POISON: 毒
+  PROJECTILE: 飛来物
+  STARVATION: 飢え
+  SUFFOCATION: 窒息
+  SUICIDE: 自ら
+  THORNS: 棘
+  VOID: 奈落
+  FALLING_BLOCK: 落下してきたブロック
+  HOT_FLOOR: マグマブロック
+  CRAMMING: 圧迫
+  DRAGON_BREATH: ドラゴンのブレス
+  CREEPER: クリーパー
+  SKELETON: スケルトン
+  SPIDER: クモ
+  GIANT: ジャイアント
+  ZOMBIE: ゾンビ
+  SLIME: スライム
+  GHAST: ガスト
+  PIG_ZOMBIE: ゾンビピグリン
+  ENDERMAN: エンダーマン
+  CAVE_SPIDER: ドクグモ
+  SILVERFISH: シルバーフィッシュ
+  BLAZE: ブレイズ
+  MAGMA_CUBE: マグマキューブ
+  ENDER_DRAGON: エンダードラゴン
+  WITHER: ウィザー
+  WITCH: ウィッチ
+  WOLF: オオカミ
+  IRON_GOLEM: アイアンゴーレム
+  SPLASH_POTION: スプラッシュポーション
+error:
+  arena:
+    alreadyplaying: あなたはすでに &a%1%&r に参加しています！
+  arenaexists: アリーナは既に存在します！
+  arenanotexists: "アリーナが存在しません: %1%"
+  arenaconfig: "アリーナ設定の読み込み中にエラーが発生しました: %1%"
+  argumenttype: "&c無効な引数の型です:&r &e%1%&r は適切な &a%2%&r ではありません。"
+  argument: "&c認識できない引数です:&r %1% - 有効な引数: &a%2%&r"
+  blacklist:
+    disallowed: あなたはこれを %1% できません！ブラックリストに登録されています！
+    unknownsubcommand: "不明なサブコマンドです。有効なコマンド: &a%1%&r"
+    unknowntype: "不明なタイプです。有効なタイプ: &e%1%&r"
+  class:
+    full: クラス &a%1%&r は満員です！
+    notenoughexp: クラス &a%1%&r を選択するための経験値が不足しています！
+    notfound: "クラスが見つかりません: &a%1%&r"
+    notgiven: クラスが指定されていません！
+    needsautoclass: "%1% モジュールは autoclass 設定を定義する必要があります"
+    needsjoinduringmatchgoal: "%1% モジュールは join.allowDuringMatch を有効にし、試合中の参加を許可するゴールが必要です"
+    incompatiblesetting: "%1% モジュールは %2% 設定と互換性がありません"
+  cmdblocked: "&cコマンドはブロックされています: %1%"
+  invalidcmd: "無効なコマンドです: %1%"
+  unknowncmd: 不明なコマンドです
+  arenadisabled: アリーナは無効です。後でもう一度お試しください！
+  editmode: 編集モードです！
+  error: "&cエラー: %1%"
+  fightinprogress: 試合は既に進行中です！
+  goal:
+    goalnotfound: "ゴール &a%1%& が &a%2%& で見つかりませんでした。有効なゴール: &a%3%&r"
+  install: "&a%1%&r のインストール中にエラーが発生しました！"
+  invalid_argument_count: "&c引数の数が無効です&r (%1%個ではなく%2%個である必要があります)！"
+  valuenotfound: "無効な値です: &a%1%&r!"
+  existingvalue: "値 &a%1%&r は既に &e%2%&r に存在します！"
+  nonexistingvalue: "値 &a%1%&r は &e%2%&r に存在しません！"
+  invfull: インベントリが一杯です。すべての報酬を受け取れませんでした！
+  arenafull: アリーナは満員です！
+  joinrange: アリーナに参加するには距離が遠すぎます！
+  notjoinregion: あなたは参加可能エリアにいません！参加するにはそこへ移動してください！
+  nojoinmodule: アリーナ設定に参加モジュールがありません。設定する必要があります！
+  teamfull: チーム %1% は満員です！
+  log:
+    matnotfound: "認識できないマテリアルです: %1%"
+  missingspawn: "不足しているスポーン: &r%1%"
+  missingblock: "不足しているブロック: &r%1%"
+  outofboudsspawn: "以下のスポーンはBATTLEリージョンの範囲外です: &r%1%"
+  noarenas: アリーナが見つかりません！
+  valueneg: "負の値です: &c%1%&r"
+  nochest: チェストを見ていません！
+  nocontainer: コンテナを見ていません！
+  nogoal: ゴールを追加していません！ &a/pa <arena> goal <goalname>
+  nospawns: スポーンが設定されていません！
+  classperms: あなたはクラス &a%1%&r を使用する権限がありません！
+  permjoin: あなたはこのアリーナに参加する権限がありません！
+  noperm: "&c%1% する権限がありません！"
+  noplayerfound: プレイヤーが見つかりません！
+  notinarena: あなたはアリーナに参加していません！
+  notnumeric: "&c引数が数字ではありません:&r %1%"
+  onlyplayers: "&cこのコマンドはプレイヤーのみが使用できます！"
+  playernotfound: "&cプレイヤーが見つかりません: &r%1%&c"
+  positives: "正の値です: &b%1%&r"
+  potioneffecttypenotfound: "PotionEffectTypeが見つかりません: &e%1%&r"
+  needsameblocktype: すべてのブロックは同じ種類/マテリアルである必要があります
+  ready:
+    notready0: 少なくとも1人のプレイヤーが準備完了していません！
+    notready1: あなたはアリーナに一人です！
+    notready2: あなたのチームはアリーナに一チームだけです！
+    notready3: チームのプレイヤーが不足しています！
+    notready4: アリーナのプレイヤーが不足しています！
+    notready5: 少なくとも1人のプレイヤーがクラスを選択していません！
+    noclass: あなたはクラスを選択していません！
+  region:
+    flagnotfound: "リージョンフラグ &a%1%&r は不明です！有効な値: %2%"
+    invalid: リージョンの選択が無効です。リージョンは体積を持たず、機能しません！
+    notfound: リージョン &a%1%&r が見つかりません！
+    protectionnotfound: リージョン保護 &a%1%&r は不明です！
+    typenotfound: "リージョンタイプ &a%1%&r は不明です！有効な値: %2%"
+    youselect: あなたは既にアリーナのリージョンを選択中です！
+    youselect2: コマンドをもう一度入力して選択モードをキャンセルします！
+    youselectexit: リージョンの選択をキャンセルしました！
+  select2: 保存する前に2つの地点を選択してください。
+  teamnotfound: "チームが見つかりません: &a%1%&r"
+  noteamavailable: 利用可能なチームがありません。
+  uninstall: "アンインストール中にエラーが発生しました: &a%1%&r"
+  uninstall2: PVP Arenaはサーバー再起動時にアンインストールを試みます！
+  unknownmodule: "モジュールが見つかりません: %1%"
+  whitelist:
+    disallowed: あなたはこれを %1% できません！（ホワイトリストに登録されていません）
+    unknownsubcommand: "不明なサブコマンドです。有効なコマンド: &a%1%&r"
+    unknowntype: "不明なタイプです。有効なタイプ: &e%1%&r"
+nopermto:
+  madmin: 管理する
+  create: アリーナを作成する
+  disable: 無効化する
+  edit: アリーナを編集する
+  enable: 有効化する
+  nopermjoin: アリーナに参加する
+  reload: リロードする
+  remove: アリーナを削除する
+  set: 設定ノードをセットする
+  teleport: アリーナのスポーンにテレポートする
+  user: PVP Arenaを使用する
+  cmds:
+    blacklist: blacklistコマンドを使用する
+    check: checkコマンドを使用する
+    class: classコマンドを使用する
+    create: createコマンドを使用する
+    debug: debugコマンドを使用する
+    disable: disableコマンドを使用する
+    edit: editコマンドを使用する
+    enable: enableコマンドを使用する
+    gamemode: gamemodeコマンドを使用する
+    goal: goalコマンドを使用する
+    playerclass: playerclassコマンドを使用する
+    playerjoin: playerjoinコマンドを使用する
+    protection: protectionコマンドを使用する
+    region: regionコマンドを使用する
+    regionflag: regionflagコマンドを使用する
+    regions: regionsコマンドを使用する
+    regiontype: regiontypeコマンドを使用する
+    reload: reloadコマンドを使用する
+    remove: removeコマンドを使用する
+    set: setコマンドを使用する
+    setowner: setownerコマンドを使用する
+    spawn: spawnコマンドを使用する
+    start: startコマンドを使用する
+    stop: stopコマンドを使用する
+    teams: teamsコマンドを使用する
+    teleport: teleportコマンドを使用する
+    template: templateコマンドを使用する
+    togglemod: togglemodコマンドを使用する
+    uninstall: uninstallコマンドを使用する
+    whitelist: whitelistコマンドを使用する
+    arenaclass: arenaclassコマンドを使用する
+    chat: chatコマンドを使用する
+    join: joinコマンドを使用する
+    leave: leaveコマンドを使用する
+    spectate: spectateコマンドを使用する
+    arenalist: arenalistコマンドを使用する
+    help: helpコマンドを使用する
+    info: infoコマンドを使用する
+    list: listコマンドを使用する
+    ready: readyコマンドを使用する
+    shutup: shutupコマンドを使用する
+    stats: statsコマンドを使用する
+    version: versionコマンドを使用する
+fight:
+  begins: 戦いを始めよう！
+  draw: この試合は引き分けです！勝者はいません！
+  killedbyremaining: "%1% は %2% に倒された！残りライフ: %3%"
+  killedbyremainingfrags: "%1% は %2% に倒された！残りキル数: %3%"
+  killedbyremainingteam: "%1% は %2% に倒された！チーム %4% の残りライフ: %3%"
+  killedbyremainingteamfrags: "%1% は %2% に倒された！チーム %4% の残りキル数: %3%"
+  killedby: "%1% は %2% に倒された！"
+  playerleft: "%1% が戦闘から離脱しました！"
+permission:
+  break: 破壊
+  place: 設置
+info:
+  classes: "クラス: &a%1%&r"
+  goal_active: "ゴール: &a%1%&r"
+  head_headlin: "アリーナ情報: &a%1%&r | [&a%2%&r]"
+  head_teams: "チーム: &a%1%&r"
+  mod_active: "モジュール: &a%1%&r"
+  owner: "オーナー: &a%1%&r"
+  regions: "リージョン: &a%1%&r"
+  section: "----- &a%1%&r -----"
+general:
+  installed: "インストール済み: &a%1%&r"
+  uninstalled: "アンインストール済み: &a%1%&r"
+  plugindisabled: 無効 (バージョン %1%)
+  pluginenabled: 有効 (バージョン %1%)
+list:
+  arenas: "利用可能なアリーナ: %1%"
+  dead: "死亡: %1%"
+  fighting: "戦闘中: %1%"
+  lost: "敗北: %1%"
+  lounge: "待機中: %1%"
+  "null": "エラー: %1%"
+  players: "プレイヤー: %1%"
+  team: "チーム %1%: %2%"
+  ready: "準備完了: %1%"
+  warm: "準備運動中: %1%"
+  watching: "観戦中: %1%"
+messages:
+  toArena: アリーナチャットに切り替えました！
+  toPublic: パブリックチャットに切り替えました！
+  toTeam: チームチャットに切り替えました！
+  general: "&e[%1%&e] &r%2%"
+notice:
+  closedselection: "&e選択モードを終了しました"
+  nodropitem: おっと！ズルはできません！
+  noteleport: 試合から抜けるには '/pa leave' を使用してください！
+  notice: "通知: %1%"
+  rewardedplayer: "%1% は %2% を獲得しました。"
+  remove: "&cこれによりアリーナ &a%1%&c が永久に削除されます。よろしいですか？ もう一度コマンドを実行してください！&r このメッセージを無効にするには、config.ymlの 'safeadmin' を確認してください！"
+  waitingequal: チームのプレイヤー数が均等になるのを待っています！
+  waitingforarena: 実行中のアリーナが終了するのを待っています！
+  welcomespec: 観戦エリアへようこそ！
+  youdeath: あなたはデスエリアに入りました。さようなら！
+  youescaped: あなたは戦場から脱出しました。さようなら！
+  arenabounds: アリーナの境界に到達しました。
+  arenaintrusion: このエリアは部外者立ち入り禁止です。このアリーナでプレイしたい場合は &e/pa %1%&r と入力してください。観戦したい場合は &e/pa %1% spectate&r と入力してください。
+  youleft: あなたはアリーナから退出しました！
+  youcamp: あなたはキャンプ禁止エリアにいます。移動してください！
+announce:
+  playerhaswon: "%1% がチャンピオンです！"
+  playerready: "%1%&e の準備ができました！"
+player:
+  prevented:
+    break: "&cブロックを破壊することはできません！"
+    place: "&cブロックを設置することはできません！"
+    tnt: "&cTNTを使用することはできません！"
+    tntbreak: "&cTNTを破壊することはできません！"
+    drop: "&cアイテムをドロップすることはできません！"
+    inventory: "&cこれにアクセスすることはできません！"
+    craft: "&cクラフトすることはできません！"
+ready:
+  list: "プレイヤー: %1%"
+  done: 準備完了状態になりました！
+region:
+  clear:
+    added: "リージョンエンティティクリアのホワイトリストに追加しました: &a%1%&r"
+    list: "リージョンエンティティクリアのホワイトリスト: &a%1%&r"
+    removed: "リージョンエンティティクリアのホワイトリストから削除しました: &a%1%&r"
+  flag:
+    added: "リージョンフラグを追加しました: &a%1%&r"
+    removed: "リージョンフラグを削除しました: &a%1%&r"
+  expanded: リージョンが &a%2%&r 方向に &a%1%&r ブロック拡張されました
+  contracted: リージョンが &a%2%&r 方向に &a%1%&r ブロック縮小されました
+  pos1: 最初の位置を設定しました。
+  pos2: 2番目の位置を設定しました。
+  protection_added: "リージョン保護を追加しました: &a%1%&r"
+  protection_removed: "リージョン保護を削除しました: &a%1%&r"
+  shifted: リージョンが &a%2%&r 方向に &a%1%&r ブロック移動されました
+  removed: "リージョンを削除しました: %1%"
+  saved: リージョンを保存しました。
+  saved_notice: "&6あなたは &oCUSTOM&6 リージョンを作成しました。まだ機能はありません！これを戦場リージョンにするには、&r/pvparena %1% !rt %2% BATTLE&r と入力してください。"
+  select: ワンドアイテムで2つの地点を選択してください。左クリックで1つ目、右クリックで2つ目です！
+  typeset: "リージョンタイプを設定しました: &e%1%"
+  youselect: あなたはアリーナ &a%1%&r のリージョンを選択中です！
+  shapeunknown: "アリーナ形状 '%1%' は不明です。利用可能な形状: Cuboid, Spheric, Cylindric."
+regions:
+  flags: "リージョンフラグ: &a%1%&r"
+  head: "--- &aアリーナリージョン&r [&e%1%&r]---"
+  listhead: "--- &aアリーナリージョン一覧&r [&e%1%&r]---"
+  listvalue: "&a%1%&r: %2%, %3%"
+  protections: "リージョン保護: &a%1%&r"
+  shape: "リージョン形状: &a%1%&r"
+  type: "リージョンタイプ: &a%1%&r"
+cfg:
+  reloaded: "&2%1% の設定をリロードしました。"
+  reloadfail: "&cアリーナ %1% のリロードに失敗しました。&fアリーナの設定を確認してください。"
+  set:
+    done: "&a%1%&r を &e%2%&r に設定しました！"
+    help: /pa <arena> set [page] を使用してノードリストを取得します。
+    unknown: "不明なノードです: &e%1%&r!"
+    items_not: アイテムノードを設定するには、手またはインベントリを使用してください！
+  add:
+    done: "&e%2%&r を &a%1%&r に追加しました！"
+  remove:
+    done: "&e%2%&r を &a%1%&r から削除しました！"
+lang:
+  reloaded: 言語ファイルをリロードしました！
+stats:
+  head: 統計 TOP %1% (%2%)
+  typenotfound: "統計タイプが見つかりません！有効な値: &e%1%&r"
+stattype:
+  DAMAGE: 総与ダメージ
+  DAMAGE_TAKEN: 総被ダメージ
+  DEATHS: 死亡数
+  KILLS: キル数
+  LOSSES: 敗北数
+  MAX_DAMAGE: 最大与ダメージ
+  MAX_DAMAGE_TAKEN: 最大被ダメージ
+  WINS: 勝利数
+team:
+  haswon: チーム %1%&r がチャンピオンです！
+  ready: チーム %1%&r は準備完了です！
+teams:
+  list: "利用可能なチーム: %1%"
+  add: "チームを追加しました: %1%"
+  set: "チームを設定しました: %1%"
+  remove: "チームを削除しました: %1%"
+time:
+  minutes: 分
+  seconds: 秒
+timer:
+  countdowninterrupt: カウントダウンが中断されました！準備完了のプレイヤーを待っています...
+  ending: 試合は %1% 後に終了します！
+  resetting: アリーナは %1% 後にリセットされます！
+  warmingup: ウォームアップ中... %1%！
+  pvpactivating: PVPは %1% 後に有効になります！
+updater:
+  plugin: PVP Arena
+  modules: PVP Arenaモジュールパック
+  announce: "%1% %2% が利用可能です！あなたのバージョン: %3%"
+  success: "%1% は %2% にアップデートされました。"
+  restart: サーバーを再起動してアップデートを適用してください。
+  downloading: "%1% をダウンロード中..."
+  downloaderror: "%1% のダウンロード中にエラーが発生しました"
+goal:
+  blockdestroy:
+    score: "%1% がチーム %2% のブロックを破壊した！残り破壊数: %3%"
+    setblock: チーム %1%&r のブロックを正常に設定しました
+    tosetflag: チーム %1%&r のブロックを左クリックしてください
+    notfound: チーム %1% のブロックが見つかりません
+    removed: チーム %1% のブロックが削除されました
+  checkpoints:
+    score: "%1%&e がチェックポイント #%2% に到達しました！"
+    youmissed: "チェックポイント #%1% を見逃しました！これは #%2% です"
+  dom:
+    bossbar_claiming: 解除中...
+    claiming: "&eチーム %1% がフラッグを確保中です！"
+    claimed: "&eチーム %1% がフラッグを確保しました！"
+    score: "&eチーム %1% はフラッグを保持して %2% ポイントを獲得しました！"
+    contesting: "&eチーム %1% が確保したフラッグが争奪されています！"
+    unclaiming: "&eチーム %1% が確保したフラッグが解除されています！"
+    setflag: "&eフラッグをクリックして登録してください。染色可能なブロックである必要があります。このコマンドをもう一度入力して選択モードを閉じます。"
+    existingflag: "&eこのフラッグは既に設定されています"
+  flag:
+    flaghomeleft: "%1% がチーム %2% のフラッグを持ち帰った！残りキャプチャー数: %3%"
+    touchhomeleft: "%1% がタッチダウンフラッグを持ち帰った！他のチームはライフを1つ失います！"
+    flagsave: "%1% がチーム %2% のフラッグを落としました！"
+    flagsavetouch: "%1% がタッチダウンフラッグを落としました！"
+    flaggrab: "%1% がチーム %2% のフラッグを掴みました！"
+    flaggrabtouch: "%1% がタッチダウンフラッグを掴みました！"
+    flagnotsafe: あなたのフラッグが取られています！敵のフラッグを持ち帰ることはできません！'
+    setflag: "%1% フラッグが設定されました"
+    tosetflag: チーム %1% のフラッグにしたいものを左クリックしてください
+    notfound: "フラッグが見つかりません: &e%1%"
+    removed: フラッグ &e%1%&r は削除されました
+  food:
+    notyourfood: これはあなたのかまどではありません！
+    tosetfood: "&e各 &f%1%&e をクリックして登録してください。その後、このコマンドをもう一度入力して選択モードを閉じます"
+    notfound: "ブロックが見つかりません: %1% %2% #%3%"
+    removed: "%1% %2% #%3% は削除されました"
+    existingblock: このブロックは既にチーム %1% に設定されています
+    foodfurnaceset: "かまど #%1% をチーム %2% に設定しました"
+    foodchestset: "食料チェスト #%1% をチーム %2% に設定しました"
+    itemsput: "チーム %1% はチェストに %2% 個のアイテムを入れました！スコア: %3%/%4%"
+    itemsremoved: "チーム %1% はチェストから %2% 個のアイテムを取り出しました！スコア: %3%/%4%"
+  infected:
+    lost: "&6感染者が倒されました！"
+    player: "&c%1% は感染しました！"
+    you: "&cあなたは感染しました！"
+    won: "&6感染者チームがゲームに勝利しました！"
+    iprotect: "感染者チームは %1% を防がれています"
+    iprotectset: "&eプレイヤー保護 &f%1%&f を %2% に設定しました"
+  killreward:
+    added: "キル報酬を追加しました: &e%1%&r->&a%2%"
+    removed: "キル報酬を削除しました: &e%1%"
+  liberation:
+    liberated: チーム %1% は解放されました！
+    setbutton: "%1% のボタンが設定されました"
+    scoreboardheading: "牢屋のプレイヤー:"
+    scoreboardseparator: "----------------"
+    tosetbutton: チーム %1% のボタンをクリックして登録してください
+    buttonnotfound: "%1% のボタンが存在しません"
+    buttonremoved: "%1% のボタンは削除されました"
+  physicalflags:
+    holdflag: フラッグを持ち帰るには、手に持っている必要があります！
+  sabotage:
+    tntignite: "%1% がチーム %2% のTNTに火をつけた！"
+    set: "%1% のTNTが設定されました"
+    toset: チーム %1% のTNTをクリックして登録してください
+    noselfdestroy: 自分のTNTに火をつけることはできません！
+    notgooditem: TNTに火をつけるには火打石と打ち金が必要です。
+    youtnt: あなたは今、破壊工作ツールを運んでいます。
+    tntnotfound: "%1% のTNTは存在しません"
+    tntremoved: "%1% のTNTは削除されました"
+  tank:
+    tankdown: タンクが倒された！
+    tankmode: タンクモード！みんなでタンクの %1% を倒せ！
+    tankwon: タンクが勝利しました！%1% おめでとう！
+  tdc:
+    denied: "%1% がキルを阻止した！"
+    remaining: "チーム %2% の残りキル数: %1%"
+    scored: "%1% がキルを決めた！"
+    youdenied: あなたはキルを阻止した！
+    youscored: あなたはキルを決めた！
+mod:
+  aftermatch:
+    aftermatch: アフターマッチが始まりました！
+    startingin: アフターマッチ開始まで %1%！
+    spawnnotset: スポーン 'after' が設定されていません！
+  announcements:
+    ignoreon: アナウンスを非表示にしました！
+    ignoreoff: アナウンスを受信するようになりました！
+  battlefieldjoin:
+    lang:
+      remainingtime: 次の %1% 秒間、プレイヤーはアリーナに参加し続けることができます
+  bankick:
+    lang:
+      playerbanned: "プレイヤーをBANしました: %1%"
+      playerkicked: "プレイヤーをキックしました: %1%"
+      playernotonline: "プレイヤーはオンラインではありません: %1%"
+      playerunbanned: "プレイヤーのBANを解除しました: %1%"
+      youwerebanned: あなたはアリーナ %1% からBANされました！
+      youwerekicked: あなたはアリーナ %1% からキックされました！
+      youwereunbanned: あなたはアリーナ %1% からBAN解除されました！
+  betterclasses:
+    add: ポーション効果 &e%2%&r をアリーナクラス &e%1%&r に追加しました！
+    clear: アリーナクラス &e%1%&r をクリアしました！
+    listhead: "--- クラス &e%1%&r のポーション効果 ---"
+    remove: ポーション効果 &e%2%&r をアリーナクラス &e%1%&r から削除しました！
+    respawncommand_remove: リスポーンコマンドをアリーナクラス &e%1%&r から削除しました！
+    classchange:
+      mteam: "&cあなたのチームはクラス変更の上限を超えました！"
+      mplayer: "&cあなたはクラス変更の上限を超えました！"
+  bettergears:
+    showteam: チーム %1% の色は %2% です。
+    teamdone: チーム %1% の色は %2% になりました。
+  blockrestore:
+    clearinvdone: インベントリをクリアしました！次のアリーナ開始時にラグが予想されます！
+    addedtolist: コンテナ (%1%) を復元するインベントリに追加しました！
+  chestfiller:
+    sourceChest: '"%1%" のコンテナがアリーナの新しいソースチェストになります。'
+    removedSource: アリーナのソースコンテナが削除されたため、'chestfiller.items' の設定を使用してチェストを補充します。
+    clear: 補充するチェストのリストがクリアされました！
+    addedToList: "補充リストに正常に追加されました: %1%"
+  duel:
+    accepted: "%1%&e が挑戦を受けました！ゲームを開始します。"
+    announce: "%1%&e があなたに挑戦しました！&r/pa %2% accept&e でデュエルを承諾してください。"
+    announcemoney: "&e彼らは &c%1%&e の料金を設定しました！"
+    announce2: "&r/pa %2% decline&e でデュエルを拒否できます。"
+    cancelled: "&cデュエルはキャンセルされました！"
+    busy: "%1%&e は既に戦闘中です。後でもう一度お試しください。"
+    declineds: 対戦相手がリクエストを拒否しました。デュエルはキャンセルされました。
+    declinedr: あなたはデュエルリクエストを拒否しました！
+    requested: あなたは &r%1%&e に挑戦しました！
+    requestedalready: あなたは既に誰かに挑戦しています！
+    requestexpireds: 対戦相手が時間内にリクエストを承諾しませんでした。デュエルはキャンセルされました。
+    requestexpiredr: あなたは時間内にリクエストを承諾しませんでした。デュエルはキャンセルされました。
+    starting: デュエル開始！
+    nodirectjoin: "このアリーナに直接参加することはできません！&e/pa %1% duel <player>&r で誰かにデュエルを申し込んでください。"
+  latelounge:
+    announce: "アリーナ %1% が開始されます！プレイヤー %2% が開始を希望しています。/pa %1% で参加してください。"
+    position: "あなたは待機列にいます。位置: #%1%"
+    rejoin: 参加できない状態で準備チェックが行われました。可能な時に再参加してください！
+    wait: アリーナはまもなく開始されます。お待ちください！
+    leave: あなたはアリーナ %1% の待機列から退出しました。
+  playerfinder:
+    near: "最寄りのプレイヤー: %1% ブロック！"
+    point: コンパスが最寄りのプレイヤーを指しています！
+  powerups:
+    invalidpowerupeffect: "無効なパワーアップ効果: %1%"
+    puplayer: "%1% がパワーアップを収集しました: %2%"
+    puserver: パワーアップが出現しました！
+    livesplayer: パワーアップにより、%1% は %2% のライフ/ポイントを失いました！
+    livesteams: パワーアップにより、チーム %1% は %2% のライフ/ポイントを失いました！
+    frozen: あなたは次の %1% 秒間凍りつきます！
+  realspectate:
+    info: あなたは没入視点で観戦しています！スニークで次のプレイヤーに切り替え、"アイテムを投げる"キーで前のプレイヤーに戻ります。
+  respawnrelay:
+    respawning: "%1% 後にリスポーンします！"
+    choice: "特定のスポーンポイントにリスポーンしたい場合は、チャットにスポーン番号を入力してください。利用可能なスポーン: %1%"
+    chosen: 次のスポーンポイントの選択が登録されました。
+  skins:
+    dc: DisguiseCraftにフックしています！
+    ld: LibsDisguisesにフックしています！
+    nomod: 変身プラグインが見つかりません。Skinsモジュールは非アクティブです！
+    showclass: "クラス &e%1%&r は &a%2%&r に変身します"
+    showteam: "チーム %1% は &a%2%&r に変身します"
+  spawncollections:
+    saved: スポーンコレクション "%1%" は保存されました
+    use: これから、アリーナは "%1%" スポーンコレクションのスポーンを使用します
+    notexist: スポーンコレクション "%1%" は存在しません
+    removed: スポーンコレクション "%1%" は削除されました
+    list: "アリーナの保存済みスポーンコレクション: %1%"
+    empty: 保存されたスポーンコレクションはありません
+  squads:
+    nosquad: "分隊が読み込まれていません！追加してください: /pa <arena> !sq add <name>"
+    listhead: アリーナ &b%1% の分隊
+    listitem: "分隊 %1% (最大: %2%) %3%"
+    added: 分隊 %1% が追加されました
+    set: 分隊 %1% が設定されました
+    removed: 分隊 %1% が削除されました
+    notexist: 分隊 %1% は存在しません！
+    join: あなたは分隊 &b%1%&r に参加しました！
+    leave: あなたは分隊 &b%1%&r から退出しました！
+    error: 分隊の編集中にエラーが発生しました。構文が正しくありません！
+    full: この分隊は満員です！
+    help: |-
+      /pa !sq | アリーナの分隊を表示
+      /pa !sq add <name> <limit> | プレイヤー上限付きで分隊を追加 (0で無制限)
+      /pa !sq set <name> <limit> | 分隊のプレイヤー上限を設定
+      /pa !sq remove <name> | 分隊 <name> を削除
+  startfreeze:
+    announce: ゲームは %1% 秒後に開始します！
+  tempperms:
+    noperms: 権限プラグインが見つかりません。OP権限をデフォルトとします。
+    head: "&e%1%&r の一時的な権限:"
+    added: 一時的な権限 &e%1%&r を &a%2%&r に追加しました。
+    removed: 一時的な権限 &e%1%&r を &a%2%&r から削除しました。
+  vault:
+    notenough: あなたは %1% を持っていません。
+    noaccount: このコマンドを使用するか、このアリーナでプレイするには銀行口座が必要です。
+    theynotenough: "%1% は十分なお金を持っていません！"
+    bettimeover: 賭け時間は終了しました！
+    beforebettime: 賭け時間はまだ始まっていません！試合開始までお待ちください。
+    betnotyours: 自分の試合に賭けることはできません！
+    betonlyteams: (空でない)チームにのみ賭けることができます！
+    betonlyplayers: プレイヤーにのみ賭けることができます！
+    wrongamount: 賭け金は %1% から %2% の間でなければなりません！
+    invalidamount: "無効な金額です: %1%"
+    betplaced: あなたの %2% への %1% の賭けは成立しました。
+    betchanged: あなたの賭けは変更されました。これから、あなたは %2% に %1% を賭けます。
+    youearned: あなたは %1% を獲得しました！
+    joinpay: アリーナに参加するために %1% を支払いました！
+    killreward: "%2% を倒したことで %1% を受け取りました！"
+    refunding: "%1% を返金します！"
+  walls:
+    fallingin: "壁が %1% 後に落下します！"
+    separator: "--------------------"
+    timer: 壁は %1% 後に撤去されます！
+  worldedit:
+    created: "リージョンを作成しました: &e%1%&r"
+    list:
+      added: "&e%1%&r をリージョンリストに追加しました。"
+      removed: "&e%1%&r をリージョンリストから削除しました。"
+      show: "これらのリージョンは自動的に保存または読み込みされます (autosave/autoloadの設定によります): &e%1%&r"
+      empty: リストにリージョンが追加されていません。そのため、代わりにすべてのBATTLEリージョンが保存または読み込みされます (autosave/autoloadの設定によります)。
+    loaded: "リージョンを読み込みました: &e%1%&r"
+    saved: "リージョンを保存しました: &e%1%&r"
+time_intervals:
+  "1": 1..
+  "2": 2..
+  "3": 3..
+  "4": 4..
+  "5": 5..
+  "10": 10 %s
+  "20": 20 %s
+  "30": 30 %s
+  "60": 60 %s
+  "120": 2 %m
+  "180": 3 %m
+  "240": 4 %m
+  "300": 5 %m
+  "600": 10 %m
+  "1200": 20 %m
+  "1800": 30 %m
+  "2400": 40 %m
+  "3000": 50 %m
+  "3600": 60 %m

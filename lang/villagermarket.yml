@@ -1,0 +1,796 @@
+---
+#----------------------- 全般 -----------------------#
+
+#時間のローカライズ
+time:
+  seconds: 秒
+  minutes: 分
+  minute: 分
+  hours: 時間
+  hour: 時間
+  days: 日
+  day: 日
+  never: なし
+  indefinitely: 無期限
+  less_than_a_minute: 1分未満
+
+#数量のローカライズ
+quantity:
+  free: 無料
+  infinite: 無限
+  unlimited: 無制限
+
+#村人のステータス (PAPIプレースホルダー用)
+status:
+  available: "&a購入可能"
+  bought: "&c購入済み"
+  no_owner: "&7なし"
+
+#村人の名前設定
+villager:
+  name_admin: "&c%shop%"
+  name_available: "&aレンタル可能なショップ！"
+  name_taken: "&b%player%のショップ"
+
+#----------------------- メッセージ -----------------------#
+
+messages:
+  invalid_command_usage: "&cコマンドの使い方が間違っています！ &e/vm help を使用してください"
+  reloaded: "&aプラグインがリロードされました。"
+  cancelled: "&cアクションはキャンセルされました！"
+  not_number: "&c数値を入力する必要があります！"
+  use_dot: "&c小数点にはコンマの代わりにドットを使用してください！"
+  not_valid_range: "&c数量は1から64の間でなければなりません！"
+  amount_successful: "&a数量が正常に設定されました。"
+  price_successful: "&a価格が正常に設定されました。"
+  negative_price: "&c価格を負の数にすることはできません！"
+  add_successful: "&aアイテムが正常に追加されました。"
+  type_price: "&bチャットにアイテムの価格を入力してください..."
+  type_amount: "&bチャットで売りたい/買いたい数量を入力してください..."
+  #プレースホルダー: %cancel% (上記のキャンセルオプションを参照)
+  type_cancel: "&bまたは &c%cancel% &bと入力してキャンセル"
+  sold_shop: "&bショップが売却されました！再び購入可能になりました。"
+  not_enough_money: "&c購入するための十分なお金がありません！"
+  not_enough_stock: "&c現在、在庫が十分にありません！"
+  remove_villager: "&c削除したい&b村人ショップ&cを右クリックしてください..."
+  no_villager_shop: "&cこれは村人ショップではありません！"
+  villager_removed: "&c村人ショップが削除されました！"
+  blacklisted: "&cこのアイテムはブラックリストに登録されています！"
+  owner_not_enough_money: "&cショップのオーナーは十分なお金を持っていません！"
+  not_enough_in_inventory: "&cインベントリに十分なアイテムがありません！"
+  #プレースホルダー: %player%, %amount%, %item%, %price%
+  bought_item_as_owner: "&b%player%&7があなたに&b%amount%x %item%&7を&a%price%&7で売りました。"
+  #プレースホルダー: %player%, %amount%, %material%, %price%
+  sold_item_as_owner: "&b%player%&7があなたから&b%amount%x %item%&7を&a%price%&7で購入しました。"
+  change_name: "&bチャットにショップ名を入力してください..."
+  change_name_set: "&a名前を &r%name%&a に正常に設定しました。"
+  must_be_menulore: "&cアイテムを売買するには、&e&nメニュー説明文&cに切り替えてください！"
+  cannot_buy_from_yourself: "&c自分自身からアイテムを購入することはできません！"
+  cannot_sell_to_yourself: "&c自分自身にアイテムを売ることはできません！"
+  tax: "&a%tax% &7が税金として徴収されました。"
+  expired: "&cあなたのショップの期限が切れました！保管されていたアイテムは&e/vm expiredstorage&7で回収できます。"
+  move_villager: "&7移動したい&b村人ショップ&7を右クリックしてください。"
+  move_villager_to: "&b村人ショップ&7を移動させたいブロックをクリックしてください。"
+  max_rent_time: "&cこれ以上時間を延長できません。最大レンタル時間に達しました！"
+  search_result: "&7近くに&b%amount%&7個の村人ショップが見つかりました。"
+  search_shop_info: "&7>> %name% &7場所: &c%location%"
+  get_stats: "&7統計情報を取得するには&b村人ショップ&7を右クリックしてください。"
+  not_owner: "&cあなたはこの村人ショップのオーナーではありません！"
+  type_limit_player: "&b買い取りたい最大数量をチャットに入力してください(&c0&bで無制限)..."
+  type_limit_admin: "&bこのアイテムの買取/販売上限をチャットに入力してください(&c0&bで無制限)..."
+  reached_sell_limit: "&cこれ以上このアイテムを売ることはできません！"
+  reached_buy_limit: "&cこれ以上このアイテムを買うことはできません！"
+  reached_command_limit: "&cこのコマンドの購入上限に達しました！"
+  money_left: "&a残金は %amount% です。"
+  money_currently: "&a現在 %amount% を所持しています。"
+  type_command: "&bコマンドを'/'なしで入力してください(プレースホルダーは%player%)..."
+  finish_process: "&c先にショップアイテムの追加プロセスを完了してください！(キャンセルするには'cancel'と入力)"
+  collected_money: "&a%amount%&bを回収しました。"
+  not_playershop: "&cこれはプレイヤーショップではありません！"
+  add_trusted: "&a信頼&7するプレイヤーを追加するには、所有している&b村人ショップ&7をクリックしてください"
+  remove_trusted: "&c信頼&7するプレイヤーを削除するには、所有している&b村人ショップ&7をクリックしてください"
+  trusted_added: "&aプレイヤーが追加されました。"
+  trusted_removed: "&cプレイヤーが削除されました！"
+  region_no_access: "&cこのエリアへのアクセス権がありません！"
+  no_permission_adminshop: "&cこの管理者ショップを使用する権限がありません！"
+  no_permission_playershop: "&cこのプレイヤーショップを購入する権限がありません！"
+  no_permission_change_name: "&c名前を変更する権限がありません！"
+  no_permission_command: "&cこのコマンドを使用する権限がありません！"
+  no_permission_buy_shop: "&cショップを購入する権限がありません！"
+  no_permission_use_item: "&cこのアイテムを使用する権限がありません！"
+  no_permission_citizens: "&cあなたのショップをNPCに変える権限がありません！"
+  no_permission_trade_item: "&cアイテムを交換する権限がありません！"
+  max_shops: "&cあなたは既に利用可能なショップを&e%current%&c/&e%max%&c個所有しています！"
+  get_id: "&7IDを取得するには&b村人ショップ&7を右クリックしてください！"
+  #Placeholders: %id%
+  id: "&7エンティティUUID: &b%id%"
+  type_skin: "&bチャットにスキン名を入力してください..."
+  skin_set: "&aSkinが正常に設定されました。"
+  no_expired_storage: "&c期限切れの在庫はありません！"
+  type_limit_cooldown: "&bチャットに制限のクールダウン時間を入力してください(2h, 1dなど)。制限なしの場合は'never'と入力..."
+  limit_cooldown_set: "&a取引制限のクールダウンが&e%time%に設定されました"
+  limits_cleared: "&c制限がクリアされました！"
+  name_blacklisted: "&cこのショップ名を使用することは許可されていません！"
+  max_item_price: "&cアイテムの価格が高すぎます！より低い価格で再試行してください。"
+  shopfront_cooldown: "&c再度売買する前にしばらくお待ちください！"
+  max_name_length: "&cこの名前は長すぎます！最大文字数は%limit%文字です。"
+  clone_shop: "&7クローンしたい&b村人ショップ&7を右クリックしてください。"
+  shop_cloned: "&a村人ショップが正常にクローンされました。&e/vm move&aで移動してください。"
+  set_size: "&7サイズを設定したい&b村人ショップ&7を右クリックしてください。"
+  size_set: "&aサイズが&e%size%&aに設定されました。"
+  #プレースホルダー: %amount%, %item%, %price%, %shop%
+  bought_item_as_customer: "&7あなたは&r%shop%&7から&b%amount%x %item%&7を&a%price%&7で購入しました。"
+  #プレースホルダー: %amount%, %item%, %price%, %shop%
+  sold_item_as_customer: "&7あなたは&r%shop%&7に&b%amount%x %item%&7を&a%price%&7で売りました。"
+  type_discount: "&bチャットで割引率(0-100)を入力してください..."
+  type_time: "&bチャットで時間(2h, 1dなど)を入力してください..."
+  not_valid_time: "&c無効な時間です！時間は数字で始まり、h、d、mで終わる必要があります。"
+  #プレースホルダー: %shop_name%, %discount%, %item%
+  discount_announcement: "&e%shop_name%&aは現在、&e%item%&aに&e%discount%%&aの割引を実施中です！"
+  toggle_require_permission: "&7権限要件を切り替えたい&b村人ショップ&7を右クリックしてください。"
+  require_permission_enabled: "&a権限要件が有効になりました。権限: &e%permission%"
+  require_permission_disabled: "&c権限要件が無効になりました。"
+
+stats_message:
+  - "&b村人ショップの統計:"
+  - "&7>> 販売済みアイテム: &a%items_sold%"
+  - "&7>> 買取済みアイテム: &a%items_bought%"
+  - "&7>> 稼いだ金額: &a%money_earned%"
+  - "&7>> 使った金額: &a%money_spent%"
+
+#--------------------- メニューアイテム設定 ---------------------#
+
+items:
+  back:
+    name: "&c&l戻る"
+    material: ARROW
+  filler:
+    name: ""
+    material: GRAY_STAINED_GLASS_PANE
+  next:
+    name: "&e次へ"
+    material: FEATHER
+    lore:
+      - "&7次のページ"
+  previous:
+    name: "&e前へ"
+    material: FEATHER
+    lore:
+      - "&7前のページ"
+
+#----------------------- メニュー設定 -----------------------#
+
+menus:
+  #-------------------- ショップ購入 --------------------#
+  buy_shop:
+    title: "&8購入可能なショップを買う"
+    size: 27
+    filler_slots:
+      - 0-8, 9, 17-26
+    items:
+      shop_size:
+        material: CHEST
+        slot: 12
+        #プレースホルダー: %amount%
+        name: "&a%amount%&7個のショップスロット"
+        lore:
+          - ""
+      storage_size:
+        material: WRITABLE_BOOK
+        slot: 14
+        #プレースホルダー: %amount%
+        name: "&a%amount%&7個のスロット"
+        lore:
+          - ""
+      buy_shop:
+        material: EMERALD
+        slot: 13
+        name: "&aこのショップを購入する！"
+        lore:
+          - "&7クリックしてこのショップを&a%price%&7で購入！"
+          - ""
+          - "&7このショップは&b%time%&7の間"
+          - "&7あなたのものになります！"
+
+  #-------------------- ショップ編集 --------------------#
+  edit_shop:
+    title: "&8ショップを編集"
+    size: 54
+    filler_slots:
+      - 0-8, 9, 17, 18, 26, 27, 35, 36, 44-53
+    items:
+      #販売アイテム編集
+      edit_shopfront:
+        material: WRITABLE_BOOK
+        slot: 21
+        slot_admin: 21
+        name: "&b陳列商品を編集"
+        lore:
+          - "&7クリックしてショップの販売"
+          - "&7アイテムを編集します"
+      #ショッププレビュー
+      preview_shop:
+        material: BOOK
+        slot: 23
+        slot_admin: 23
+        name: "&eショップをプレビュー"
+        lore:
+          - "&7クリックして陳列商品をプレビューします"
+      #ストレージ編集
+      edit_storage:
+        material: CHEST
+        slot: 22
+        name: "&c在庫を編集"
+        lore:
+          - "&7クリックしてショップの在庫を編集します"
+      #村人編集
+      edit_villager:
+        material: VILLAGER_SPAWN_EGG
+        slot: 30
+        slot_admin: 30
+        name: "&e村人を編集"
+        lore:
+          - "&7クリックして村人の職業を"
+          - "&7編集します"
+      #村人名変更
+      change_name:
+        material: NAME_TAG
+        slot: 32
+        slot_admin: 32
+        name: "&e村人の名前を変更"
+        lore:
+          - "&7クリックして村人の名前を変更します"
+      #ショップ売却
+      sell_shop:
+        material: FEATHER
+        slot: 31
+        name: "&cショップを売却/放棄"
+        lore:
+          - "&7クリックしてこの"
+          - "&7村人ショップを放棄します！"
+      #資金回収 (一般設定で有効にする必要があります)
+      collect_money:
+        material: GOLD_INGOT
+        slot: 41
+        name: "&a資金を回収"
+        #プレースホルダー: %worth%
+        lore:
+          - "&7クリックして&a%worth%$&7を回収"
+      #時間延長
+      increase_time:
+        material: EMERALD
+        slot: 13
+        name: "&aレンタル時間を延長"
+        #プレースホルダー: %expire%, %time%, %price%
+        lore:
+          - "&7ショップの有効期限: &e%expire%"
+          - ""
+          - "&7クリックしてレンタル時間を"
+          - "&b%time%&7延長します(&a%price%&7)！"
+      #取引通知有効化
+      enable_trade_notifications:
+        material: RED_TERRACOTTA
+        slot: 40
+        name: "&e取引通知&7: &c無効"
+        lore:
+          - "&7クリックして取引通知を有効にします"
+      #取引通知無効化
+      disable_trade_notifications:
+        material: LIME_TERRACOTTA
+        slot: 40
+        name: "&e取引通知&7: &a有効"
+        lore:
+          - "&7クリックして取引通知を無効にします"
+
+  #-------------------- 陳列商品 --------------------#
+  shopfront:
+    title: "&7%shop%"
+    #プレースホルダー: %item_name%, %mode%
+    item_name: "&f%item_name% %mode%"
+    detail_suffix: "&8(詳細)"
+    #アイテムの売買間のクールダウン(ミリ秒)
+    cooldown: 500
+    items:
+      toggle_details:
+        name: "&e詳細を切り替え"
+        material: BOOK
+        lore:
+          - "&7>> 左クリックで"
+          - "&eアイテム説明文&7と"
+          - "&eメニュー説明文&7を切り替え！"
+          - ""
+          - "&7>> 右クリック&7で戻る"
+    modes:
+      buy: "&8[&a買取&8]"
+      sell: "&8[&a販売&8]"
+      buy_and_sell: "&8[&a買取&7/&a販売&8]"
+      command: "&8[&eコマンド&8]"
+      trade: "&8[&e交換&8]"
+    discount_lore:
+      - ""
+      - "&7割引&f: &e%discount%%"
+      - "&7割引終了まで&f: &e%time%"
+    player_shop:
+      #プレースホルダー: %amount%, %price%, %stock%, %mode%
+      trade_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&b%available%&7回交換可能"
+        - ""
+        - "&7>> クリックして&l交換"
+      #プレースホルダー: %amount%, %price%, %stock%, %mode%
+      buy_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&b%stock%&7個の在庫あり"
+        - ""
+        - "&7>> クリックして&l&a購入"
+      #プレースホルダー: %amount%, %price%, %available%, %mode%
+      sell_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&b%available%&7個売却可能"
+        - ""
+        - "&7>> クリックして&l&c売却"
+      #プレースホルダー: %amount%, %price%, %available%, %mode%
+      buy_and_sell_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7購入価格&f: &a%buy_price%"
+        - "&7売却価格&f: &a%sell_price%"
+        - "&b%stock%&7個の在庫あり"
+        - "&b%available%&7個売却可能"
+        - ""
+        - "&7>> &l左クリックで&a購入"
+        - "&7>> &l右クリックで&c売却"
+    admin_shop:
+      buy_and_sell_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7購入価格&f: &a%buy_price%"
+        - "&7売却価格&f: &a%sell_price%"
+        - "%limit_lore%"
+        - ""
+        - "&7>> &l左クリックで&a購入"
+        - "&7>> &l右クリックで&c売却"
+      trade_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "%limit_lore%"
+        - ""
+        - "&7>> クリックして&l交換"
+      sell_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "%limit_lore%"
+        - ""
+        - "&7>> クリックして&l&c売却"
+      buy_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "%limit_lore%"
+        - ""
+        - "&7>> クリックして&l&a購入"
+      command_lore:
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "%limit_lore%"
+        - ""
+        - "&7>> クリックしてコマンドを&a購入"
+      buy_limit_lore:
+        - ""
+        - "&7購入済み: (&e%bought%&7/&e%limit%&7)"
+        - "&7リセットまで: &e%reset%"
+      sell_limit_lore:
+        - ""
+        - "&7売却済み: (&e%bought%&7/&e%limit%&7)"
+        - "&7リセットまで: &e%reset%"
+      buy_and_sell_limit_lore:
+        - ""
+        - "&7購入または売却済み: (&e%bought%&7/&e%limit%&7)"
+        - "&7リセットまで: &e%reset%"
+
+  #------------------ 陳列商品編集 ------------------#
+  edit_shopfront:
+    title: "&8販売アイテムを追加"
+    #プレースホルダー: %item_name%, %mode%
+    item_name: "&f%item_name% %mode%"
+    modes:
+      buy: "&8[&a買取&8]"
+      sell: "&8[&a販売&8]"
+      buy_and_sell: "&8[&a販売&7/&a買取&8]"
+      command: "&8[&eコマンド&8]"
+      trade: "&8[&e交換&8]"
+    player_shop:
+      trade_lore:
+        - "&7モード&f: %mode%"
+        - ""
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&b%available%&7回交換可能"
+        - ""
+        - "&7>> クリックして編集"
+      #プレースホルダー: %amount%, %price%, %stock%
+      sell_lore:
+        - "&7モード&f: %mode%"
+        - ""
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&b%stock%&7個の在庫あり！"
+        - ""
+        - "&7>> クリックして編集"
+      #プレースホルダー: %amount%, %price%, %available%
+      buy_lore:
+        - "&7モード&f: %mode%"
+        - ""
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&c%available%&7個買取可能！"
+        - ""
+        - "&7>> クリックして編集"
+      buy_and_sell_lore:
+        - "&7モード&f: %mode%"
+        - ""
+        - "&7数量&f: &e%amount%"
+        - "&7購入価格&f: &a%buy_price%"
+        - "&7売却価格&f: &a%sell_price%"
+        - "&c%available%&7個買取可能！"
+        - "&b%stock%&7個の在庫あり！"
+        - ""
+        - "&7>> クリックして編集"
+    admin_shop:
+      standard_lore:
+        - "&7モード&f: %mode%"
+        - ""
+        - "&7数量&f: &e%amount%"
+        - "&7価格&f: &a%price%"
+        - "&7プレイヤー上限&f: &a%limit%"
+        - ""
+        - "&7>> クリックして編集"
+
+  #--------------------- ストレージ ---------------------#
+  storage:
+    title: "&8ショップの在庫"
+
+  #------------------ 村人編集 ------------------#
+  edit_villager:
+    title: "&8村人を編集"
+    size: 36
+    #サーバーにCitizensプラグインが必要です
+    citizens_item:
+      material: PLAYER_HEAD
+      slot: 31
+      name: "&e代わりにスキンを設定"
+      lore:
+        - "&7クリックしてこのショップにプレイヤースキンを設定"
+    back_slot: 35
+    filler_slots:
+      - 0-8, 27-34
+    items:
+      armorer:
+        material: IRON_CHESTPLATE
+        slot: 9
+        name: "&7防具鍛冶"
+      butcher:
+        material: PORKCHOP
+        slot: 10
+        name: "&c肉屋"
+      cartographer:
+        material: MAP
+        slot: 11
+        name: "&b製図家"
+      cleric:
+        material: POTION
+        slot: 12
+        name: "&d聖職者"
+      farmer:
+        material: WHEAT
+        slot: 13
+        name: "&e農民"
+      fisherman:
+        material: COD
+        slot: 14
+        name: "&b釣り人"
+      fletcher:
+        material: FLETCHING_TABLE
+        slot: 15
+        name: "&e矢師"
+      leatherworker:
+        material: LEATHER
+        slot: 16
+        name: "&c革細工師"
+      librarian:
+        material: BOOK
+        slot: 17
+        name: "&6司書"
+      mason:
+        material: BRICK
+        slot: 18
+        name: "&c石工"
+      nitwit:
+        material: PAPER
+        slot: 19
+        name: "&f無職"
+      shepherd:
+        material: WHITE_WOOL
+        slot: 20
+        name: "&f羊飼い"
+      toolsmith:
+        material: IRON_AXE
+        slot: 21
+        name: "&7道具鍛冶"
+      weaponsmith:
+        material: IRON_SWORD
+        slot: 22
+        name: "&7武器鍛冶"
+      none:
+        material: VILLAGER_SPAWN_EGG
+        slot: 23
+        name: "&cなし"
+      #レガシーバージョン
+      blacksmith:
+        material: ANVIL
+        slot: 9
+        name: "&7鍛冶屋"
+      priest:
+        material: POTION
+        slot: 11
+        name: "&d司祭"
+      normal:
+        material: VILLAGER_SPAWN_EGG
+        slot: 12
+        name: "&cなし"
+
+  #-------------------- ショップ売却 --------------------#
+  sell_shop:
+    title: "&8よろしいですか？"
+    size: 27
+    filler_slots:
+      - 0-8, 9, 17-26
+    items:
+      no_cancel:
+        material: RED_TERRACOTTA
+        slot: 14
+        name: "&cいいえ、キャンセル"
+      #ショップが再利用可能な場合(コマンドで作成)
+      yes_sell:
+        material: LIME_TERRACOTTA
+        slot: 12
+        name: "&aはい、ショップを売却"
+        #プレースホルダー: %amount%
+        lore:
+          - "&7このショップを放棄/売却すると"
+          - "&7使用した金額の&a50%"
+          - "&7(&a%amount%&7)を受け取ります"
+          - ""
+      #ショップが再利用不可の場合(スポーンエッグで作成)
+      yes_remove:
+        material: LIME_TERRACOTTA
+        slot: 12
+        name: "&aはい、ショップを削除"
+        lore:
+          - "&7これにより&c村人ショップ&7が"
+          - "&7削除され、新しいショップの"
+          - "&7スポーンエッグが手に入ります！"
+
+  #-------------------- アイテム編集 --------------------#
+  edit_item:
+    title: "&8アイテムを編集"
+    size: 54
+    item_slot: 4
+    filler_slots:
+      - 0-3, 5-8, 9, 17, 18, 26, 27, 35, 36, 44-48, 50-52
+    back_slot: 53
+    limit_cycle:
+      player: "&eプレイヤー&7 | サーバー"
+      server: "&7プレイヤー |&e サーバー"
+    mode_cycle:
+      player_shop:
+        item_trade: "&e販売 &7(アイテムとの交換)"
+        sell: "&e販売 &7| 買取 | 販売 & 買取"
+        buy: "&7販売 | &e買取 &7| 販売 & 買取"
+        buy_and_sell: "&7販売 | 買取 | &e販売 & 買取"
+      admin_shop:
+        item_trade: "&e販売 &7(アイテムとの交換)"
+        sell: "&e販売 &7| 買取 | 販売 & 買取 | コマンド"
+        buy: "&7販売 | &e買取 &7| 販売 & 買取 | コマンド"
+        command: "&7販売 | 買取 | 販売 & 買取 | &eコマンド"
+        buy_and_sell: "&7販売 | 買取 | &e販売 & 買取 &7| コマンド"
+
+    items:
+      mode:
+        material: OAK_SIGN
+        slot: 22
+        name: "&eモード&7: %mode%"
+        #%cycle%は上記のサイクル値に置き換えられます
+        lore:
+          - "&7クリックして切り替え:"
+          - "%cycle%"
+      amount:
+        material: CHEST
+        slot: 21
+        name: "&e数量&7: &r%amount%"
+        lore:
+          - "&7クリックして編集"
+      price:
+        material: GOLD_INGOT
+        slot: 23
+        name: "&e価格&7: &r%price%"
+        lore:
+          - "&7クリックして価格を編集"
+          - ""
+          - "&7>> アイテムでクリックして"
+          - "&7お金の代わりにアイテムと交換"
+        buy_and_sell_lore:
+          - "&7>> 左クリックで購入価格を設定"
+          - "&7>> 右クリックで売却価格を設定"
+          - ""
+          - "&7>> アイテムでクリックして"
+          - "&7お金の代わりにアイテムと交換"
+      delete:
+        material: BARRIER
+        slot: 49
+        name: "&c削除"
+        lore:
+          - "&7クリックしてアイテムを&c削除"
+      command:
+        material: COMMAND_BLOCK
+        slot: 31
+        name: "&eコマンド"
+        lore:
+          - "&7現在のコマンド:"
+          - "&7- &e%command%&7"
+          - ""
+          - "&7>> 左クリックで追加"
+          - "&7>> 右クリックでリセット"
+      buy_limit:
+        material: FEATHER
+        slot: 31
+        name: "&e買取上限&7: %limit%"
+        lore:
+          - "&7>> クリックして編集"
+      player_limit:
+        material: PLAYER_HEAD
+        slot: 30
+        name: "&eプレイヤー上限&7: &f%limit%"
+        lore:
+          - "&7>> 右クリックで切り替え:"
+          - "%cycle%"
+          - ""
+          - "&7>> 左クリックで編集"
+      limit_cooldown:
+        material: CLOCK
+        slot: 32
+        name: "&e制限クールダウン&7: &f%cooldown%"
+        lore:
+          - "&7次の制限リセット: &e%next%"
+          - ""
+          - "&7>> 左クリックでクールダウンを編集"
+          - "&7>> 右クリックで制限を&cクリア"
+      discount:
+        material: EMERALD
+        slot: 13
+        name: "&e割引&7: &f%discount%%"
+        lore:
+          - "&7終了日時: &e%discount_end%"
+          - ""
+          - "&7>> クリックして編集"
+      custom_amount_enabled:
+        material: LIME_TERRACOTTA
+        slot: 40
+        name: "&e自由な数量&7: &a有効"
+        lore:
+          - "&7クリックして自由な数量設定を無効に"
+      custom_amount_disabled:
+        material: RED_TERRACOTTA
+        slot: 40
+        name: "&e自由な数量&7: &c無効"
+        lore:
+          - "&7クリックして自由な数量設定を有効に"
+  confirm_action:
+    title: "&8よろしいですか？"
+    size: 27
+    filler_slots:
+      - 0-8, 9, 17-26
+    items:
+      accept:
+        material: GREEN_TERRACOTTA
+        slot: 12
+        name: "&aはい、確認"
+      cancel:
+        material: RED_TERRACOTTA
+        slot: 14
+        name: "&cいいえ、キャンセル"
+  buy_item:
+    title_buy: "&8購入"
+    title_sell: "&8売却"
+    title_trade: "&8交換"
+    title_command: "&8コマンド"
+    filler_slots:
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        14,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+      ]
+    back_slot: 26
+    size: 27
+    confirm_slot: 13
+    items:
+      increase_one:
+        material: LIME_TERRACOTTA
+        slot: 15
+        name: "&a1つ増やす"
+        lore:
+          - "&7クリックして1つ増やす"
+      increase_stack:
+        material: LIME_TERRACOTTA
+        slot: 16
+        amount: 64
+        name: "&a1スタック増やす"
+        lore:
+          - "&7クリックして1スタック増やす"
+      increase_max:
+        material: EMERALD_BLOCK
+        slot: 4
+        name: "&a最大まで増やす"
+        lore:
+          - "&7クリックして最大まで増やす"
+      decrease_one:
+        material: RED_TERRACOTTA
+        slot: 10
+        name: "&c1つ減らす"
+        lore:
+          - "&7クリックして1つ減らす"
+      decrease_stack:
+        material: RED_TERRACOTTA
+        slot: 11
+        amount: 64
+        name: "&c1スタック減らす"
+        lore:
+          - "&7クリックして1スタック減らす"
+      toggle_sell:
+        material: BOOK
+        slot: 22
+        name: "&7売却 | &e購入"
+        lore:
+          - "&7クリックして売却へ"
+      toggle_buy:
+        material: BOOK
+        name: "&e売却 &7| 購入"
+        slot: 22
+        lore:
+          - "&7クリックして購入へ"
+  #-------------------- 期限切れストレージ --------------------#
+  expired_storage:
+    title: "&8期限切れストレージ"
+
+#----------------- 村人ショップアイテム設定 -----------------#
+
+shop_item:
+  material: VILLAGER_SPAWN_EGG
+  name: "&b&l村人ショップを作成！"
+  #プレースホルダー: %shop_size%, %storage_size%
+  lore:
+    - "&7このスポーンエッグを&a設置&7して"
+    - "&7あなただけの"
+    - "&a村人ショップ&7を作成しよう！"
+    - ""
+    - "&7>> &aショップサイズ&7: &c%shop_size%"
+    - "&7>> &aストレージサイズ&7: &c%storage_size%"
