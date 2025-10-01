@@ -1,9 +1,11 @@
 [project]
-name = "make-head"
+name = "hololis-datapack"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "gspread>=6.2.1",
     "namemcpy>=1.5.1",
+    "requests>=2.32.3",
 ]
