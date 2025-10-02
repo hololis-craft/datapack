@@ -1,0 +1,26 @@
+Outfit-DisguiseTrigger-{{ group_key }}:
+  Conditions:
+{% if head_item is defined %}
+  - wearing{slot=HEAD;m=Outfit-{{ head_item }}} true
+{% endif %}
+{% if chest_item is defined %}
+  - wearing{slot=CHEST;m=Outfit-{{ chest_item }}} true
+{% endif %}
+{% if legs_item is defined %}
+  - wearing{slot=LEGS;m=Outfit-{{ legs_item }}} true
+{% endif %}
+{% if feet_item is defined %}
+  - wearing{slot=FEET;m=Outfit-{{ feet_item }}} true
+{% endif %}
+
+  Skills:
+  - setvariable{var=target.outfit__disguise_count;value=0} ?!crouching
+  - variableadd{var=target.outfit__disguise_count;amount=1} ?crouching
+  - skill{s=Outfit-DisguiseRun-{{ group_key }}} @self ?variableEquals{var=target.outfit__disguise_count;value=60}
+
+Outfit-DisguiseRun-{{ group_key }}:
+  Skills:
+  - setvariable{var=skill.outfit__disguise_name;type=STRING;value="{{ disguise_name }}"}
+  - setvariable{var=skill.outfit__disguise_skin;type=STRING;value="{{ disguise_skin }}"}
+  - setvariable{var=target.outfit__disguise_count;value=0}
+  - skill{s=Outfit-Disguise} @self

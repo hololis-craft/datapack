@@ -1,23 +1,17 @@
-OutfitDisguise:
+Outfit-Disguise:
   Cooldown: 60
-  Conditions:
-  - crouching true
-  - wearing{slot=HEAD;m=suisei-concept-outfit-helmet} true
-  - wearing{slot=CHEST;m=suisei-concept-outfit-chestplate} true
-  - wearing{slot=LEGS;m=suisei-concept-outfit-leggings} true
-  - wearing{slot=FEET;m=suisei-concept-outfit-boots} true
   Skills:
   - effect:sound{s=entity.player.levelup;v=2;p=2} @self
   - effect:particles{p=Instant_Effect;a=10;vS=1.5;hS=2;speed=0.1} @self
   - effect:particles{particle=mobSpell;color=#ffffff;amount=48;hS=0.4;vS=0.7;speed=0;y=2} @self
   - delay 10
-  - projectile{onTick=OutfitDisguise-Tick;onHit=OutfitDisguise-Hit;onEnd=OutfitDisguise-Hit;v=10;i=1;g=0.1;StopAtBlock=true;StopAtEntity=true} @targetlocation
+  - projectile{onTick=Outfit-Disguise-Tick;onHit=Outfit-Disguise-Hit;onEnd=Outfit-Disguise-Hit;v=10;i=1;g=0.1;StopAtBlock=true;StopAtEntity=true} @targetlocation
 
-OutfitDisguise-Tick:
+Outfit-Disguise-Tick:
   Skills:
   - effect:particles{p=end_rod;vS=0;hS=0;a=5;speed=0} @origin
 
-OutfitDisguise-Hit:
+Outfit-Disguise-Hit:
   Skills:
   - effect:sound{s=block.enchantment_table.use;v=2;p=1} @self
   - effect:sound{s=entity.player.levelup;v=2;p=0.5} @self
@@ -26,21 +20,20 @@ OutfitDisguise-Hit:
   - potion{t=speed;l=0;d=600;force=true} @self
   - potion{t=saturation;l=0;d=300;force=true} @self
   - potion{t=glowing;l=9;d=600;force=true} @self
-  - skill{s=OutfitDisguise-Effect;repeat=40;repeatInterval=15}
+  - skill{s=Outfit-Disguise-Effect;repeat=40;repeatInterval=15}
   - effect:sound{s=entity.enderman.teleport;p=1.3;v=1.05} @self
-  - disguise{d=player &b&lすいちゃん setSkin suisei_hosimati} @self
+  - disguise{d=player &b<skill.var.outfit__disguise_name> setSkin <skill.var.outfit__disguise_skin>} @self
   - effect:particles{particle=flash;amount=1;hS=0;vS=0;speed=0;y=0.7} @self
   - delay 600
-  - sendactionmessage{m="&b&l&n変装が解除されました"} @self
-  - skill{s=OutfitDisguise-End} @self
+  - skill{s=Outfit-Disguise-End} @self
 
-OutfitDisguise-End:
+Outfit-Disguise-End:
   Skills:
   - undisguise @self
   - effect:particles{particle=flash;amount=1;hS=0;vS=0;speed=0;y=0.7} @self
   - effect:particles{particle=mobSpell;color=#ffffff;amount=48;hS=0.4;vS=0.7;speed=0;y=0.7} @self
   - effect:sound{s=entity.enderman.teleport;p=1.3;v=1.05} @self
 
-OutfitDisguise-Effect:
+Outfit-Disguise-Effect:
   Skills:
-  - effect:particles{particle=dust_color_transition;color1=#41DBFF;color2=#0000FF;size=1.5;amount=25;hS=0.85;vS=1.2;speed=0.1;y=0.8} @self
+  - effect:particles{particle=dust_color_transition;color1=#41DBFF;color2=#ffffff;size=1.5;amount=25;hS=0.85;vS=1.2;speed=0.1;y=0.8} @self

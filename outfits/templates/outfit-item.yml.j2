@@ -1,0 +1,50 @@
+Outfit-{{ num }}:
+  Id: {{ base_item }}
+  MaxDurability: {{ max_durability }}
+  Display: '<b><white>{{ display_name }}</white></b>'
+  Attributes:
+{% if kind == "Helmet" %}
+    Head:
+      Armor: 2.5
+      MovementSpeed: 0.02
+      Health: 1
+      SafeFallDistance: 1
+{% elif kind == "Chestplate" %}
+    Chest:
+      Armor: 7
+      MovementSpeed: 0.01
+      Health: 2
+      MaxAbsorption: 2
+{% elif kind == "Leggings" %}
+    Legs:
+      Armor: 5.5
+      Health: 2
+      MovementSpeed: 0.02
+{% elif kind == "Boots" %}
+    Feet:
+      Armor: 2.5
+      Health: 1
+      StepHeight: 0.5
+{% endif %}
+  Options:
+{% if color_code is defined %}
+    Color: {{ color_code }}
+{% endif %}
+{% if trim_material is defined and trim_pattern is defined %}
+    Trim:
+      Material: {{ trim_material }}
+      Pattern: {{ trim_pattern }}
+{% endif %}
+  Lore:
+  - '<st><b>=<reset><white>Shift+左クリック <b>>><reset> <white><u>本人に一時変装'
+  Enchantments:
+  - UNBREAKING 8
+  - PROTECTION 2
+  - AQUA_AFFINITY 1
+  - RESPIRATION 3
+  - MENDING 1
+  Skills:
+{# Only helmets have the disguise skill #}
+{% if has_disguise and kind == "Helmet" %}
+  - skill{s=Outfit-DisguiseTrigger-{{ group_key }}} @self ~onTimer:1
+{% endif %}
