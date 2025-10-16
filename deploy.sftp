@@ -3,4 +3,4 @@ rm hololis
 put -R datapacks/hololis/ .
 cd ../..
 cd plugins/Geyser-Spigot/packs
-put resoucepack/hololis_craft_be.mcpack .
+put resourcepack/hololis_craft_be.mcpack .
