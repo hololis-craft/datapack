@@ -1,0 +1,579 @@
+{
+	"format_version": "1.20.20",
+	"sound_definitions": {
+		"note.guitar": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/guitar"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.flute": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/flute"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bell": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bell"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.chime": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/icechime"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.xylophone": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/xylobone"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.iron_xylophone": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/iron_xylophone"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.cow_bell": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/cow_bell"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.didgeridoo": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/didgeridoo"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bit": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bit"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.banjo": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/banjo"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.banjo_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/banjo_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.banjo_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/banjo_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.banjo_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/banjo_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.banjo_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/banjo_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.basedrum_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bd_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.basedrum_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bd_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.basedrum_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bd_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.basedrum_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bd_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bass_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bass_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bass_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bass_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bass_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bass_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bass_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bass_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bell_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bell_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bell_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bell_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bell_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bell_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bell_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bell_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bit_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bit_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bit_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bit_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bit_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bit_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.bit_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/bit_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.click_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/click_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.click_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/click_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.click_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/click_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.click_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/click_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.cow_bell_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/cow_bell_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.cow_bell_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/cow_bell_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.cow_bell_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/cow_bell_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.cow_bell_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/cow_bell_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.dbass_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/dbass_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.dbass_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/dbass_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.dbass_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/dbass_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.dbass_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/dbass_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.didgeridoo_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/didgeridoo_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.didgeridoo_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/didgeridoo_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.didgeridoo_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/didgeridoo_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.didgeridoo_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/didgeridoo_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.flute_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/flute_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.flute_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/flute_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.flute_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/flute_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.flute_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/flute_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.guitar_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/guitar_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.guitar_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/guitar_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.guitar_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/guitar_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.guitar_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/guitar_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.harp_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/harp_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.harp_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/harp_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.harp_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/harp_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.harp_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/harp_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.chime_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/icechime_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.chime_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/icechime_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.chime_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/icechime_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.chime_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/icechime_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.iron_xylophone_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/iron_xylophone_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.iron_xylophone_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/iron_xylophone_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.iron_xylophone_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/iron_xylophone_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.iron_xylophone_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/iron_xylophone_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.pling_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/pling_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.pling_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/pling_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.pling_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/pling_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.pling_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/pling_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.sdrum_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/sdrum_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.sdrum_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/sdrum_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.sdrum_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/sdrum_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.sdrum_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/sdrum_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.snare_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/snare_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.snare_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/snare_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.snare_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/snare_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.snare_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/snare_2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.xylophone_-2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/xylobone_-2"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.xylophone_-1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/xylobone_-1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"block.note.xylophone_1": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/xylobone_1"
+			],
+			"subtitle": "subtitles.note.note"
+		},
+		"note.xylophone_2": {
+			"category": "record",
+			"sounds": [
+				"sounds/note/xylobone_2"
+			],
+			"subtitle": "subtitles.note.note"
+		}
+	}
+}

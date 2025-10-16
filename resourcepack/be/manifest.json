@@ -1,0 +1,37 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Hololis Craft Resource-pack (BE)",
+    "name": "Hololis Craft",
+    "platform_locked": false,
+    "uuid": "cd78935c-8a10-449e-a389-d87fe2b70b59",
+    "version": [
+      0,
+      1,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      13,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Hololis Craft Resource-pack (BE)",
+      "type": "resources",
+      "uuid": "5b35c890-0a8c-4bcf-95f4-614055c37cd4",
+      "version": [
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "koca2000 and ishland (Note Block Expansion)",
+      "f0reachARR"
+    ]
+  }
+}

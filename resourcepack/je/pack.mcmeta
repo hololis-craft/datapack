@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "pack_format": 64,
+    "min_format": [22, 0],
+    "max_format": [69, 0],
+    "description": "Hololis Craft Resource-pack (JE)"
+  }
+}

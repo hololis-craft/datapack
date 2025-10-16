@@ -1,0 +1,50 @@
+name: Deploy via SFTP
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+      - name: Create Resource Pack
+        run: |
+          cd resourcepack
+          bash mkpack.bash
+          mkdir webroot
+          mv hololis_craft_je.zip webroot/hololis_craft_je.zip
+
+      - name: Run SFTP deploy
+        run: |
+          sftp -b deploy.sftp -o StrictHostKeyChecking=no ${{ secrets.MAIN_SFTP_ADDRESS }}
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        with:
+          path: resourcepack/webroot
+
+  deploy-pages:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
