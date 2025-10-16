@@ -8,5 +8,9 @@
 # - be/ : Root directory for Bedrock Edition resource pack
 #   - manifest.json : Metadata file for the resource pack
 
-zip -r hololis_craft_je.zip je/
-zip -r hololis_craft_be.mcpack be/
+pushd je
+zip -r ../hololis_craft_je.zip .
+popd
+pushd be
+zip -r ../hololis_craft_be.mcpack .
+popd
