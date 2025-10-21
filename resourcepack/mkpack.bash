@@ -9,8 +9,4 @@
 pushd je
 zip -r ../hololis_craft_je.zip .
 popd
-git clone https://github.com/GeyserMC/PackConverter PackConverter
-pushd PackConverter
-./gradlew build
-java -jar bootstrap/build/libs/Thunder.jar nogui --input ../hololis_craft_je.zip --output ../hololis_craft_be.mcpack
-popd
+java -jar ../PackConverter/bootstrap/build/libs/Thunder.jar nogui --input hololis_craft_je.zip --output hololis_craft_be.mcpack
