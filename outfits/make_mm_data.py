@@ -3,10 +3,12 @@ from google.oauth2.service_account import Credentials
 import gspread
 from jinja2 import Environment, FileSystemLoader
 import hashlib
+from yaml import safe_dump
 
 SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/10czE4OoQ-3k_SK0TGciAh9-b14DudNp1JeHLyQRd80g/edit#gid=0"
 ITEM_OUTPUT = "./pack/Items/generated-outfit-items.yml"
 DISGUISE_SKILL_OUTPUT = "./pack/Skills/generated-disguise.yml"
+MARKET_OUTPUT = "./pack/generated-vm-items.yml"
 
 scopes = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -22,7 +24,8 @@ gc = gspread.authorize(credentials)
 
 def is_valid_entry(entry):
     return (
-        entry.get("基礎アイテム") not in (None, "")
+        entry.get("No") not in (None, "")
+        and entry.get("基礎アイテム") not in (None, "")
         and entry.get("装備名 (MiniMessage)") not in (None, "")
         and entry.get("耐久値") not in (None, "")
     )
@@ -32,6 +35,7 @@ spreadsheet = gc.open_by_url(SPREADSHEET_URL)
 all_entries = spreadsheet.get_worksheet(0).get_all_records()
 all_entries = [e for e in all_entries if is_valid_entry(e)]
 
+ordered_groups = []
 grouped_entries: Dict[str, List[dict]] = {}
 
 for entry in all_entries:
@@ -40,6 +44,7 @@ for entry in all_entries:
         continue
     if group_name not in grouped_entries:
         grouped_entries[group_name] = []
+        ordered_groups.append(group_name)
     grouped_entries[group_name].append(entry)
 
 env = Environment(loader=FileSystemLoader("./templates"), autoescape=False)
@@ -56,6 +61,20 @@ disguise_skill_template = env.get_template("disguise-skill.yml.j2")
 #  '装飾パターン': 'wayfinder',
 #  '(変身) MCID': 'yozoramel',
 #  '(変身) テクスチャHash': ''
+
+
+def villager_market_slot_id(
+    offset: int, type: Literal["Helmet", "Chestplate", "Leggings", "Boots"]
+) -> int:
+    type_index = {
+        "Helmet": 0,
+        "Chestplate": 9,
+        "Leggings": 9 * 2,
+        "Boots": 9 * 3,
+    }[type]
+    page = int(offset / 9)
+    base_slot = page * 5 * 9 + (offset % 9)
+    return base_slot + type_index
 
 
 # Hash化されたグループ名を返す
@@ -107,6 +126,35 @@ def has_disguise(entry):
 
 items_list = []
 disguise_skills_list = []
+market_items = {}
+
+
+def create_market_item(entry):
+    return {
+        "item": {
+            "==": "org.bukkit.inventory.ItemStack",
+            "DataVersion": 4440,
+            "id": "minecraft:paper",
+            "count": 1,
+            "components": {
+                "minecraft:custom_data": f'{{PublicBukkitValues:{{"mythicmobs:type":"Outfit-{entry["No"]}"}}}}'
+            },
+            "schema_version": 1,
+        },
+        "amount": 1,
+        "trade_amount": 0,
+        "price": float(1),
+        "buy_price": float(1),
+        "mode": "SELL",
+        "buy_limit": 0,
+        "command": [],
+        "server_trades": 0,
+        "limit_mode": "PLAYER",
+        "cooldown": "never",
+        "discount": {"amount": 0, "end": 0},
+        "allow_custom_amount": True,
+        "next_reset": 0,
+    }
 
 
 def color_int_to_rgb(color_int):
@@ -157,6 +205,14 @@ def create_item(entry):
 
 for entry in all_entries:
     items_list.append(create_item(entry))
+    if "内部グループ名" not in entry or entry["内部グループ名"] == "":
+        continue
+    kind = get_kind_from_item(str(entry["基礎アイテム"]).lower())
+    if kind == "Unknown":
+        continue
+    offset = ordered_groups.index(entry.get("内部グループ名", ""))
+    market_slot = str(villager_market_slot_id(offset, kind))
+    market_items[market_slot] = create_market_item(entry)
 
 for group_name, entries in grouped_entries.items():
     if group_has_disguise(group_name):
@@ -185,3 +241,6 @@ with open(ITEM_OUTPUT, "w", encoding="utf-8") as f:
 
 with open(DISGUISE_SKILL_OUTPUT, "w", encoding="utf-8") as f:
     f.write("\n".join(disguise_skills_list))
+
+with open(MARKET_OUTPUT, "w", encoding="utf-8") as f:
+    f.write(safe_dump({"items_for_sale": market_items}, sort_keys=False))
