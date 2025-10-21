@@ -5,12 +5,12 @@
 # - je/ : Root directory for Java Edition resource pack
 #   - pack.mcmeta : Metadata file for the resource pack
 #   - assets/ : Directory containing all asset files (textures, sounds, etc.)
-# - be/ : Root directory for Bedrock Edition resource pack
-#   - manifest.json : Metadata file for the resource pack
 
 pushd je
 zip -r ../hololis_craft_je.zip .
 popd
-pushd be
-zip -r ../hololis_craft_be.mcpack .
+git clone https://github.com/GeyserMC/PackConverter PackConverter
+pushd PackConverter
+./gradlew build
+java -jar bootstrap/build/libs/Thunder.jar nogui --input ../hololis_craft_je.zip --output ../hololis_craft_be.mcpack
 popd
