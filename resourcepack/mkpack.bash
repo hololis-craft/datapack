@@ -9,4 +9,4 @@
 pushd je
 zip -r ../hololis_craft_je.zip .
 popd
-java -jar ../PackConverter/bootstrap/build/libs/Thunder.jar nogui --input hololis_craft_je.zip --output hololis_craft_be.mcpack
+# java -jar ../PackConverter/bootstrap/build/libs/Thunder.jar nogui --input hololis_craft_je.zip --output hololis_craft_be.mcpack

@@ -19,24 +19,24 @@ jobs:
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
 
-      - name: Checkout PackConverter
-        uses: actions/checkout@v4
-        with:
-          repository: GeyserMC/PackConverter
-          path: PackConverter
+      # - name: Checkout PackConverter
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: GeyserMC/PackConverter
+      #     path: PackConverter
 
-      - name: Cache PackConverter Gradle dependencies
-        uses: actions/cache@v3
-        with:
-          path: PackConverter/.gradle
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
+      # - name: Cache PackConverter Gradle dependencies
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: PackConverter/.gradle
+      #     key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-gradle-
 
-      - name: Configure PackConverter
-        run: |
-          cd PackConverter
-          ./gradlew --build-cache build
+      # - name: Configure PackConverter
+      #   run: |
+      #     cd PackConverter
+      #     ./gradlew --build-cache build
 
       - name: Create Resource Pack
         run: |
