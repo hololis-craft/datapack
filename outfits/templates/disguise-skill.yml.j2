@@ -19,8 +19,6 @@ Outfit-DisguiseCrouch-{{ group_key }}:
   - setVariable{var=target.outfit__disguise_flag;value=3}  ?crouching  ?variableEquals{var=target.outfit__disguise_flag;value=2}
   - setVariable{var=target.outfit__disguise_flag;value=4}  ?!crouching ?variableEquals{var=target.outfit__disguise_flag;value=3}
   - setVariable{var=target.outfit__disguise_flag;value=5}  ?crouching  ?variableEquals{var=target.outfit__disguise_flag;value=4}
-  - message{m="Timer: <target.var.outfit__disguise_timer>"} @Everyone
-  - message{m="Flag: <target.var.outfit__disguise_flag>"} @Everyone
 
 
 Outfit-DisguiseTimer-{{ group_key }}:

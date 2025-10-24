@@ -103,6 +103,11 @@ def group_has_disguise(group_name):
     for entry in entries:
         if "(変身) MCID" not in entry and "(変身) テクスチャHash" not in entry:
             return False
+        if entry["(変身) MCID"] in (None, "") and entry["(変身) テクスチャHash"] in (
+            None,
+            "",
+        ):
+            return False
     group_kinds = set(
         [
             get_kind_from_item(str(e["基礎アイテム"]).lower())
@@ -179,6 +184,10 @@ def minify_yaml(text: str) -> str:
     return "\n".join(minified_lines)
 
 
+def change_disguise_name(name: str) -> str:
+    return name.replace("衣装", "").replace("概念", "").strip()
+
+
 def create_item(entry):
     kind = get_kind_from_item(str(entry["基礎アイテム"]).lower())
     item_data = {
@@ -247,7 +256,7 @@ for group_name, entries in grouped_entries.items():
             "chest_item": item_nums.get("Chestplate", ""),
             "legs_item": item_nums.get("Leggings", ""),
             "feet_item": item_nums.get("Boots", ""),
-            "disguise_name": group_name,
+            "disguise_name": change_disguise_name(group_name),
             "disguise_skin": mcid,
         }
         disguise_skills_list.append(
