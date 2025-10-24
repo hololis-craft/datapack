@@ -4,6 +4,7 @@ import gspread
 from jinja2 import Environment, FileSystemLoader
 import hashlib
 from yaml import safe_dump
+import datetime
 
 SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/10czE4OoQ-3k_SK0TGciAh9-b14DudNp1JeHLyQRd80g/edit#gid=0"
 ITEM_OUTPUT = "./pack/Items/generated-outfit-items.yml"
@@ -186,6 +187,7 @@ def create_item(entry):
         "max_durability": entry["耐久値"],
         "display_name": entry["装備名 (MiniMessage)"],
         "kind": kind,
+        "generation_unixtime": int(datetime.datetime.now().timestamp()),
     }
     if entry.get("染色(皮装備)") not in (None, ""):
         item_data["color_code"] = color_int_to_rgb(entry["染色(皮装備)"])

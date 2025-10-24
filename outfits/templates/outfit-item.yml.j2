@@ -6,26 +6,29 @@ Outfit-{{ num }}:
 {% if kind == "Helmet" %}
     Head:
       Armor: 2.5
-      MovementSpeed: 0.02
+      MovementSpeed: 0.01
       Health: 1
       SafeFallDistance: 1
 {% elif kind == "Chestplate" %}
     Chest:
-      Armor: 7
+      Armor: 6
       MovementSpeed: 0.01
-      Health: 2
+      Health: 1
       MaxAbsorption: 2
 {% elif kind == "Leggings" %}
     Legs:
       Armor: 5.5
-      Health: 2
-      MovementSpeed: 0.02
+      Health: 1
+      MovementSpeed: 0.01
 {% elif kind == "Boots" %}
     Feet:
       Armor: 2.5
       Health: 1
       StepHeight: 0.5
 {% endif %}
+  ItemUpdater:
+    Version: {{ generation_unixtime }}
+    PreserveStatRatio: true
   Options:
 {% if color_code is defined %}
     Color: {{ color_code }}
@@ -35,14 +38,19 @@ Outfit-{{ num }}:
       Material: {{ trim_material }}
       Pattern: {{ trim_pattern }}
 {% endif %}
+    FireResistant: true
+  Hide:
+  - ATTRIBUTES
+  - ARMOR_TRIM
+  - DYE
   Lore:
-  - '<st><b>=<reset><white>長押しスニーク <b>>><reset> <white><u>本人に一時変装'
+  - '<white>全身装備して、素早くスニーク3回'
+  - '<white><b>>><reset> <white><u>変装 + 効果付与'
   Enchantments:
-  - UNBREAKING 8
+  - UNBREAKING 4
   - PROTECTION 2
   - AQUA_AFFINITY 1
   - RESPIRATION 3
-  - MENDING 1
   Skills:
 {# Only helmets have the disguise skill #}
 {% if has_disguise and kind == "Helmet" %}
