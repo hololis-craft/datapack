@@ -37,3 +37,7 @@ Outfit-Disguise-End:
 Outfit-Disguise-Effect:
   Skills:
   - effect:particles{particle=dust_color_transition;color1=#41DBFF;color2=#ffffff;size=1.5;amount=25;hS=0.85;vS=1.2;speed=0.1;y=0.8} @self
+
+Outfit-Disguise-Failed:
+  Skills:
+  - effect:sound{s=entity.villager.no;v=2;p=1} @self

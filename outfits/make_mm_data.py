@@ -203,6 +203,9 @@ def create_item(entry):
     return minify_yaml(item_template.render(item_data))
 
 
+previous_index = 0
+previous_group = None
+previous_gen = None
 for entry in all_entries:
     items_list.append(create_item(entry))
     if "内部グループ名" not in entry or entry["内部グループ名"] == "":
@@ -210,8 +213,21 @@ for entry in all_entries:
     kind = get_kind_from_item(str(entry["基礎アイテム"]).lower())
     if kind == "Unknown":
         continue
-    offset = ordered_groups.index(entry.get("内部グループ名", ""))
-    market_slot = str(villager_market_slot_id(offset, kind))
+    group_name = entry.get("内部グループ名", "")
+
+    current_gen = entry.get("期生", None)
+
+    if current_gen is not None and current_gen != "":
+        if previous_gen is not None and current_gen != previous_gen:
+            previous_index += 8 - (previous_index % 9)
+        previous_gen = current_gen
+
+    if group_name != previous_group and previous_group is not None:
+        previous_index += 1
+
+    previous_group = group_name
+
+    market_slot = str(villager_market_slot_id(previous_index, kind))
     market_items[market_slot] = create_market_item(entry)
 
 for group_name, entries in grouped_entries.items():

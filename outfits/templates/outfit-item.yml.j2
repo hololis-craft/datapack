@@ -46,5 +46,7 @@ Outfit-{{ num }}:
   Skills:
 {# Only helmets have the disguise skill #}
 {% if has_disguise and kind == "Helmet" %}
-  - skill{s=Outfit-DisguiseTrigger-{{ group_key }}} @self ~onTimer:1
+  - skill{s=Outfit-DisguiseTimer-{{ group_key }}} @self ~onTimer:1
+  - skill{s=Outfit-DisguiseCrouch-{{ group_key }}} @self ~onCrouch
+  - skill{s=Outfit-DisguiseCrouch-{{ group_key }}} @self ~onUnCrouch
 {% endif %}

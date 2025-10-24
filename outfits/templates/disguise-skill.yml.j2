@@ -1,4 +1,4 @@
-Outfit-DisguiseTrigger-{{ group_key }}:
+Outfit-DisguiseCrouch-{{ group_key }}:
   Conditions:
 {% if head_item is defined %}
   - wearing{slot=HEAD;m=Outfit-{{ head_item }}} true
@@ -14,13 +14,39 @@ Outfit-DisguiseTrigger-{{ group_key }}:
 {% endif %}
 
   Skills:
-  - setvariable{var=target.outfit__disguise_count;value=0} ?!crouching
-  - variableadd{var=target.outfit__disguise_count;amount=1} ?crouching
-  - skill{s=Outfit-DisguiseRun-{{ group_key }}} @self ?variableEquals{var=target.outfit__disguise_count;value=60}
+  - setVariable{var=target.outfit__disguise_flag;value=1}  ?crouching  ?!variableIsSet{var=target.outfit__disguise_flag} # Disguise condition check
+  - setVariable{var=target.outfit__disguise_flag;value=2}  ?!crouching ?variableEquals{var=target.outfit__disguise_flag;value=1}
+  - setVariable{var=target.outfit__disguise_flag;value=3}  ?crouching  ?variableEquals{var=target.outfit__disguise_flag;value=2}
+  - setVariable{var=target.outfit__disguise_flag;value=4}  ?!crouching ?variableEquals{var=target.outfit__disguise_flag;value=3}
+  - setVariable{var=target.outfit__disguise_flag;value=5}  ?crouching  ?variableEquals{var=target.outfit__disguise_flag;value=4}
+  - message{m="Timer: <target.var.outfit__disguise_timer>"} @Everyone
+  - message{m="Flag: <target.var.outfit__disguise_flag>"} @Everyone
+
+
+Outfit-DisguiseTimer-{{ group_key }}:
+  Conditions:
+{% if head_item is defined %}
+  - wearing{slot=HEAD;m=Outfit-{{ head_item }}} true
+{% endif %}
+{% if chest_item is defined %}
+  - wearing{slot=CHEST;m=Outfit-{{ chest_item }}} true
+{% endif %}
+{% if legs_item is defined %}
+  - wearing{slot=LEGS;m=Outfit-{{ legs_item }}} true
+{% endif %}
+{% if feet_item is defined %}
+  - wearing{slot=FEET;m=Outfit-{{ feet_item }}} true
+{% endif %}
+  Skills:
+  - setVariable{var=target.outfit__disguise_timer;value=0}  ?!variableIsSet{var=target.outfit__disguise_flag} # Reset timer if check is inactive
+  - variableAdd{var=target.outfit__disguise_timer;amount=1} ?variableIsSet{var=target.outfit__disguise_flag} # Increment timer when check is active
+  - variableUnset{var=target.outfit__disguise_flag}         ?variableInRange{var=target.outfit__disguise_timer;v=>30} # Clear flag if timer exceeds limit
+  - skill{s=Outfit-DisguiseRun-{{ group_key }}} @self       ?variableEquals{var=target.outfit__disguise_flag;value=5}
 
 Outfit-DisguiseRun-{{ group_key }}:
   Skills:
   - setvariable{var=skill.outfit__disguise_name;type=STRING;value="{{ disguise_name }}"}
   - setvariable{var=skill.outfit__disguise_skin;type=STRING;value="{{ disguise_skin }}"}
-  - setvariable{var=target.outfit__disguise_count;value=0}
-  - skill{s=Outfit-Disguise} @self
+  - variableUnset{var=target.outfit__disguise_flag}
+  - skill{s=Outfit-Disguise-Failed} @self ?skillOnCooldown{s=Outfit-Disguise}
+  - skill{s=Outfit-Disguise} @self ?!skillOnCooldown{s=Outfit-Disguise}
