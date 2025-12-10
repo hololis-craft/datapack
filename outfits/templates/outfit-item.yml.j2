@@ -27,7 +27,7 @@ Outfit-{{ num }}:
       StepHeight: 0.5
 {% endif %}
   ItemUpdater:
-    Version: {{ generation_unixtime }}
+    Version: 10
     PreserveStatRatio: true
   Options:
 {% if color_code is defined %}
@@ -39,6 +39,7 @@ Outfit-{{ num }}:
       Pattern: {{ trim_pattern }}
 {% endif %}
     FireResistant: true
+    Glint: false
   Hide:
   - ATTRIBUTES
   - ARMOR_TRIM
