@@ -1,20 +1,34 @@
 {
   "display": {
     "title": "またまたさかまた",
-    "description": "ぽえぽえぽえ〜、見つかっちゃった〜",
+    "description": "ぽえぽえぽえ〜、見ないでよ〜",
     "icon": {
       "id": "minecraft:tropical_fish"
     }
   },
   "criteria": {
     "": {
-      "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": {
-          "type": "minecraft:armor_stand",
-          "nbt": "{\"Tags\":[\"Sakamata\"]}"
-        }
-      }
+        "item": {
+          "items": "minecraft:spyglass"
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "looking_at": {
+                  "type": "minecraft:armor_stand",
+                  "nbt": "{\"Tags\":[\"Sakamata\"]}"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:using_item"
     }
   },
   "parent": "hololis:hololis/lobby"
