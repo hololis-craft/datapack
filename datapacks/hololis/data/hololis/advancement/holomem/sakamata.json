@@ -1,0 +1,21 @@
+{
+  "display": {
+    "title": "またまたさかまた",
+    "description": "ぽえぽえぽえ〜、見つかっちゃった〜",
+    "icon": {
+      "id": "minecraft:tropical_fish"
+    }
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:armor_stand",
+          "nbt": "{\"Tags\":[\"Sakamata\"]}"
+        }
+      }
+    }
+  },
+  "parent": "hololis:hololis/lobby"
+}
