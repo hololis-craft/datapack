@@ -1,0 +1,8 @@
+{
+  "block.plush.otonose_kanade_monday": {
+    "sounds": [
+      "holoproduct:block/plush/otonose_kanade_monday"
+    ],
+    "subtitle": "subtitles.block.note_block.note"
+  }
+}
