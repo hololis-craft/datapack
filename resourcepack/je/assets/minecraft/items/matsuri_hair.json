@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/matsuri_hair"
+    "model": "hololiscraft:item/matsuri_hair"
   }
 }

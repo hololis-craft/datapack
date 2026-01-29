@@ -3,6 +3,6 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "item/coffee_milk"
+    "layer0": "hololiscraft:item/coffee_milk"
   }
 }

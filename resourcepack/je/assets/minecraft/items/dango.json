@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/dango"
+    "model": "hololiscraft:item/dango"
   }
 }

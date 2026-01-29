@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/bibi_hat"
+    "model": "hololiscraft:item/bibi_hat"
   }
 }

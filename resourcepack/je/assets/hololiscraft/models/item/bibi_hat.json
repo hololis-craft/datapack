@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "item/bibi_hat/texture",
-		"particle": "item/bibi_hat/texture"
+		"0": "hololiscraft:item/bibi_hat/texture",
+		"particle": "hololiscraft:item/bibi_hat/texture"
 	},
 	"elements": [
 		{

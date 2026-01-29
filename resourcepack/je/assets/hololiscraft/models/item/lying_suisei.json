@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "item/lying_suisei/texture_cloth",
-		"3": "item/lying_suisei/texture_face",
-		"particle": "item/lying_suisei/texture_cloth"
+		"2": "hololiscraft:item/lying_suisei/texture_cloth",
+		"3": "hololiscraft:item/lying_suisei/texture_face",
+		"particle": "hololiscraft:item/lying_suisei/texture_cloth"
 	},
 	"elements": [
 		{

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:item/lying_suisei"
+    "model": "hololiscraft:item/lying_suisei"
   }
 }

@@ -3,6 +3,6 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "hololiscraft:item/cooked_soy"
+    "layer0": "hololiscraft:item/milk_bottle"
   }
 }

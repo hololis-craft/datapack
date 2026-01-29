@@ -3,6 +3,6 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "item/taiyaki"
+    "layer0": "hololiscraft:item/udon"
   }
 }

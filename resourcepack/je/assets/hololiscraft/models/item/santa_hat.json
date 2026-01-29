@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "item/santa_hat/texture",
-		"particle": "item/santa_hat/texture"
+		"0": "hololiscraft:item/santa_hat/texture",
+		"particle": "hololiscraft:item/santa_hat/texture"
 	},
 	"elements": [
 		{

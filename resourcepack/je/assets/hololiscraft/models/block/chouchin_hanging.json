@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"lantern": "block/chouchin",
-		"particle": "block/chouchin"
+		"lantern": "hololiscraft:block/chouchin",
+		"particle": "hololiscraft:block/chouchin"
 	},
 	"elements": [
 		{
