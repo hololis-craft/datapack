@@ -1,0 +1,104 @@
+[
+  {
+    "title": "GHOST",
+    "author": "星街すいせい",
+    "disc-namespace": "ghostone",
+    "model-data": 1,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "ビビデバ",
+    "author": "星街すいせい",
+    "disc-namespace": "onezero",
+    "model-data": 2,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "PrismMelody",
+    "author": "hololive IDOL PROJECT",
+    "disc-namespace": "prismmelodyhololiveidolprojectone",
+    "model-data": 3,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "もぐもぐYUMMY！",
+    "author": " 猫又おかゆ",
+    "disc-namespace": "yummyone",
+    "model-data": 4,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "3時12分",
+    "author": "TAKU INOUE & 星街すいせい",
+    "disc-namespace": "threeonetwotakuinoueone",
+    "model-data": 5,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "Stellar Stellar",
+    "author": "星街すいせい",
+    "disc-namespace": "stellarstellarone",
+    "model-data": 6,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "あくあ色パレット",
+    "author": "湊あくあ",
+    "disc-namespace": "onezerozero",
+    "model-data": 7,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "ごめんねメディスン",
+    "author": " 紫咲シオン",
+    "disc-namespace": "onezerozerozero",
+    "model-data": 8,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "Pieces",
+    "author": "星街すいせい",
+    "disc-namespace": "piecesone",
+    "model-data": 9,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "Shiny Smily Story",
+    "author": "hololive IDOL PROJECT",
+    "disc-namespace": "shinysmilystoryhololiveidolprojectone",
+    "model-data": 10,
+    "creeper-drop": true,
+    "lores": [
+      "HKsan"
+    ],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  }
+]
