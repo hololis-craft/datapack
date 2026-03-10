@@ -1,0 +1,68 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/disc_fragment_5"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/fragment_ghostone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/fragment_onezero"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "item/fragment_prismmelodyhololiveidolprojectone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "item/fragment_yummyone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "item/fragment_threeonetwotakuinoueone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "item/fragment_stellarstellarone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "item/fragment_onezerozero"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "item/fragment_onezerozerozero"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "item/fragment_piecesone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "item/fragment_shinysmilystoryhololiveidolprojectone"
+    }
+  ]
+}
