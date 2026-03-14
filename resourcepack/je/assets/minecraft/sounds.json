@@ -498,5 +498,13 @@
         "stream": true
       }
     ]
+  },
+  "remixone": {
+    "sounds": [
+      {
+        "name": "records/remixone",
+        "stream": true
+      }
+    ]
   }
 }
