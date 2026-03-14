@@ -4,7 +4,7 @@
     "author": "hololive IDOL PROJECT",
     "duration": 267,
     "disc-namespace": "ridinondreamshololiveidolprojectone",
-    "model-data": 12,
+    "model-data": 14,
     "creeper-drop": false,
     "lores": [],
     "loot-tables": {},
@@ -15,10 +15,40 @@
     "author": "星街すいせい",
     "duration": 348,
     "disc-namespace": "remixone",
-    "model-data": 9,
+    "model-data": 13,
     "creeper-drop": true,
     "lores": [],
     "loot-tables": {},
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "繭と心",
+    "author": "星街すいせい",
+    "duration": 350,
+    "disc-namespace": "onethree",
+    "model-data": 7,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {
+      "chests/village/village_plains_house": 80,
+      "chests/village/village_savanna_house": 80,
+      "chests/village/village_desert_house": 80,
+      "chests/village/village_snowy_house": 80,
+      "chests/village/village_taiga_house": 80
+    },
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "ぽ",
+    "author": "尾丸ポルカ",
+    "duration": 143,
+    "disc-namespace": "onefour",
+    "model-data": 8,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {
+      "chests/abandoned_mineshaft": 60
+    },
     "fragment-loot-tables": {}
   }
 ]

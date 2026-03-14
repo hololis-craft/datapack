@@ -506,5 +506,21 @@
         "stream": true
       }
     ]
+  },
+  "onethree": {
+    "sounds": [
+      {
+        "name": "records/onethree",
+        "stream": true
+      }
+    ]
+  },
+  "onefour": {
+    "sounds": [
+      {
+        "name": "records/onefour",
+        "stream": true
+      }
+    ]
   }
 }

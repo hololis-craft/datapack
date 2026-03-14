@@ -6,75 +6,87 @@
   "overrides": [
     {
       "predicate": {
-        "custom_model_data": 12
+        "custom_model_data": 14
       },
       "model": "item/music_disc_ridinondreamshololiveidolprojectone"
     },
     {
       "predicate": {
-        "custom_model_data": 10
+        "custom_model_data": 13
+      },
+      "model": "item/music_disc_remixone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
       },
       "model": "item/music_disc_ghostone"
     },
     {
       "predicate": {
-        "custom_model_data": 11
+        "custom_model_data": 9
       },
       "model": "item/music_disc_onezero"
     },
     {
       "predicate": {
-        "custom_model_data": 1
+        "custom_model_data": 10
       },
       "model": "item/music_disc_prismmelodyhololiveidolprojectone"
     },
     {
       "predicate": {
-        "custom_model_data": 2
+        "custom_model_data": 11
       },
       "model": "item/music_disc_yummyone"
     },
     {
       "predicate": {
-        "custom_model_data": 3
+        "custom_model_data": 1
       },
       "model": "item/music_disc_threeonetwotakuinoueone"
     },
     {
       "predicate": {
-        "custom_model_data": 4
+        "custom_model_data": 2
       },
       "model": "item/music_disc_stellarstellarone"
     },
     {
       "predicate": {
-        "custom_model_data": 5
+        "custom_model_data": 3
       },
       "model": "item/music_disc_onezerozero"
     },
     {
       "predicate": {
-        "custom_model_data": 6
+        "custom_model_data": 4
       },
       "model": "item/music_disc_onezerozerozero"
     },
     {
       "predicate": {
-        "custom_model_data": 7
+        "custom_model_data": 5
       },
       "model": "item/music_disc_piecesone"
     },
     {
       "predicate": {
-        "custom_model_data": 8
+        "custom_model_data": 6
       },
       "model": "item/music_disc_shinysmilystoryhololiveidolprojectone"
     },
     {
       "predicate": {
-        "custom_model_data": 9
+        "custom_model_data": 7
       },
-      "model": "item/music_disc_remixone"
+      "model": "item/music_disc_onethree"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "item/music_disc_onefour"
     }
   ]
 }
