@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "title": "Ridin' on Dreams",
+    "author": "hololive IDOL PROJECT",
+    "duration": 267,
+    "disc-namespace": "ridinondreamshololiveidolprojectone",
+    "model-data": 10,
+    "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {},
+    "fragment-loot-tables": {}
+  }
+]

@@ -8,73 +8,80 @@
     },
     "entries": [
       {
-        "threshold": 1,
+        "threshold": 11,
         "model": {
           "type": "model",
           "model": "item/fragment_ghostone"
         }
       },
       {
-        "threshold": 2,
+        "threshold": 1,
         "model": {
           "type": "model",
           "model": "item/fragment_onezero"
         }
       },
       {
-        "threshold": 3,
+        "threshold": 2,
         "model": {
           "type": "model",
           "model": "item/fragment_prismmelodyhololiveidolprojectone"
         }
       },
       {
-        "threshold": 4,
+        "threshold": 3,
         "model": {
           "type": "model",
           "model": "item/fragment_yummyone"
         }
       },
       {
-        "threshold": 5,
+        "threshold": 4,
         "model": {
           "type": "model",
           "model": "item/fragment_threeonetwotakuinoueone"
         }
       },
       {
-        "threshold": 6,
+        "threshold": 5,
         "model": {
           "type": "model",
           "model": "item/fragment_stellarstellarone"
         }
       },
       {
-        "threshold": 7,
+        "threshold": 6,
         "model": {
           "type": "model",
           "model": "item/fragment_onezerozero"
         }
       },
       {
-        "threshold": 8,
+        "threshold": 7,
         "model": {
           "type": "model",
           "model": "item/fragment_onezerozerozero"
         }
       },
       {
-        "threshold": 9,
+        "threshold": 8,
         "model": {
           "type": "model",
           "model": "item/fragment_piecesone"
         }
       },
       {
-        "threshold": 10,
+        "threshold": 9,
         "model": {
           "type": "model",
           "model": "item/fragment_shinysmilystoryhololiveidolprojectone"
+        }
+      },
+      {
+        "threshold": 10,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_ridinondreamshololiveidolprojectone"
         }
       }
     ]
