@@ -8,101 +8,108 @@
     },
     "entries": [
       {
-        "threshold": 14,
+        "threshold": 15,
         "model": {
           "type": "model",
           "model": "item/music_disc_ridinondreamshololiveidolprojectone"
         }
       },
       {
-        "threshold": 13,
+        "threshold": 14,
         "model": {
           "type": "model",
           "model": "item/music_disc_remixone"
         }
       },
       {
-        "threshold": 12,
+        "threshold": 13,
         "model": {
           "type": "model",
           "model": "item/music_disc_ghostone"
         }
       },
       {
-        "threshold": 9,
+        "threshold": 12,
         "model": {
           "type": "model",
           "model": "item/music_disc_onezero"
         }
       },
       {
-        "threshold": 10,
+        "threshold": 9,
         "model": {
           "type": "model",
           "model": "item/music_disc_prismmelodyhololiveidolprojectone"
         }
       },
       {
-        "threshold": 11,
+        "threshold": 10,
         "model": {
           "type": "model",
           "model": "item/music_disc_yummyone"
         }
       },
       {
-        "threshold": 1,
+        "threshold": 11,
         "model": {
           "type": "model",
           "model": "item/music_disc_threeonetwotakuinoueone"
         }
       },
       {
-        "threshold": 2,
+        "threshold": 1,
         "model": {
           "type": "model",
           "model": "item/music_disc_stellarstellarone"
         }
       },
       {
-        "threshold": 3,
+        "threshold": 2,
         "model": {
           "type": "model",
           "model": "item/music_disc_onezerozero"
         }
       },
       {
-        "threshold": 4,
+        "threshold": 3,
         "model": {
           "type": "model",
           "model": "item/music_disc_onezerozerozero"
         }
       },
       {
-        "threshold": 5,
+        "threshold": 4,
         "model": {
           "type": "model",
           "model": "item/music_disc_piecesone"
         }
       },
       {
-        "threshold": 6,
+        "threshold": 5,
         "model": {
           "type": "model",
           "model": "item/music_disc_shinysmilystoryhololiveidolprojectone"
         }
       },
       {
-        "threshold": 7,
+        "threshold": 6,
         "model": {
           "type": "model",
           "model": "item/music_disc_onethree"
         }
       },
       {
-        "threshold": 8,
+        "threshold": 7,
         "model": {
           "type": "model",
           "model": "item/music_disc_onefour"
+        }
+      },
+      {
+        "threshold": 8,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_onefive"
         }
       }
     ]

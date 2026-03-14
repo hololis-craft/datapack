@@ -4,7 +4,7 @@
     "author": "hololive IDOL PROJECT",
     "duration": 267,
     "disc-namespace": "ridinondreamshololiveidolprojectone",
-    "model-data": 14,
+    "model-data": 15,
     "creeper-drop": false,
     "lores": [],
     "loot-tables": {},
@@ -15,7 +15,7 @@
     "author": "星街すいせい",
     "duration": 348,
     "disc-namespace": "remixone",
-    "model-data": 13,
+    "model-data": 14,
     "creeper-drop": true,
     "lores": [],
     "loot-tables": {},
@@ -26,10 +26,16 @@
     "author": "星街すいせい",
     "duration": 350,
     "disc-namespace": "onethree",
-    "model-data": 7,
+    "model-data": 6,
     "creeper-drop": true,
     "lores": [],
-    "loot-tables": {},
+    "loot-tables": {
+      "chests/village/village_plains_house": 80,
+      "chests/village/village_savanna_house": 80,
+      "chests/village/village_desert_house": 80,
+      "chests/village/village_snowy_house": 80,
+      "chests/village/village_taiga_house": 80
+    },
     "fragment-loot-tables": {}
   },
   {
@@ -37,8 +43,21 @@
     "author": "尾丸ポルカ",
     "duration": 143,
     "disc-namespace": "onefour",
-    "model-data": 8,
+    "model-data": 7,
     "creeper-drop": true,
+    "lores": [],
+    "loot-tables": {
+      "chests/abandoned_mineshaft": 60
+    },
+    "fragment-loot-tables": {}
+  },
+  {
+    "title": "エリートですから！（さくらみこのテーマ）",
+    "author": "コルソン",
+    "duration": 90,
+    "disc-namespace": "onefive",
+    "model-data": 8,
+    "creeper-drop": false,
     "lores": [],
     "loot-tables": {},
     "fragment-loot-tables": {}

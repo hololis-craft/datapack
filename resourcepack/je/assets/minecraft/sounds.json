@@ -522,5 +522,13 @@
         "stream": true
       }
     ]
+  },
+  "onefive": {
+    "sounds": [
+      {
+        "name": "records/onefive",
+        "stream": true
+      }
+    ]
   }
 }
