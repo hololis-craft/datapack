@@ -29,13 +29,7 @@
     "model-data": 7,
     "creeper-drop": true,
     "lores": [],
-    "loot-tables": {
-      "chests/village/village_plains_house": 80,
-      "chests/village/village_savanna_house": 80,
-      "chests/village/village_desert_house": 80,
-      "chests/village/village_snowy_house": 80,
-      "chests/village/village_taiga_house": 80
-    },
+    "loot-tables": {},
     "fragment-loot-tables": {}
   },
   {
@@ -46,9 +40,7 @@
     "model-data": 8,
     "creeper-drop": true,
     "lores": [],
-    "loot-tables": {
-      "chests/abandoned_mineshaft": 60
-    },
+    "loot-tables": {},
     "fragment-loot-tables": {}
   }
 ]
