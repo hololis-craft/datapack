@@ -1,0 +1,23 @@
+{
+  "display": {
+    "title": {
+      "translate": "電車でGO！",
+      "color": "#1a00de"
+    },
+    "description": {
+      "translate": "Train Cartsを始める",
+      "color": "#1a00de"
+    },
+    "icon": {
+      "id": "minecraft:minecart"
+    },
+    "announce_to_chat": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "hololis:hololis/root"
+}

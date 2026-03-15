@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "translate": "おまえらはどう生きるか",
+      "color": "#ff0000"
+    },
+    "description": {
+      "translate": "もう何でもできる、さて、どうする？",
+      "color": "#ff0000"
+    },
+    "icon": {
+      "id": "minecraft:command_block_minecart",
+      "components": {
+        "enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "hololis:hololis/train_carts"
+}
