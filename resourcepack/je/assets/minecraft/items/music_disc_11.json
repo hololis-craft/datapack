@@ -8,108 +8,115 @@
     },
     "entries": [
       {
-        "threshold": 15,
+        "threshold": 16,
         "model": {
           "type": "model",
           "model": "item/music_disc_ridinondreamshololiveidolprojectone"
         }
       },
       {
-        "threshold": 14,
+        "threshold": 15,
         "model": {
           "type": "model",
           "model": "item/music_disc_remixone"
         }
       },
       {
-        "threshold": 13,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_ghostone"
-        }
-      },
-      {
-        "threshold": 12,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_onezero"
-        }
-      },
-      {
-        "threshold": 9,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_prismmelodyhololiveidolprojectone"
-        }
-      },
-      {
-        "threshold": 10,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_yummyone"
-        }
-      },
-      {
-        "threshold": 11,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_threeonetwotakuinoueone"
-        }
-      },
-      {
-        "threshold": 1,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_stellarstellarone"
-        }
-      },
-      {
-        "threshold": 2,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_onezerozero"
-        }
-      },
-      {
-        "threshold": 3,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_onezerozerozero"
-        }
-      },
-      {
-        "threshold": 4,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_piecesone"
-        }
-      },
-      {
-        "threshold": 5,
-        "model": {
-          "type": "model",
-          "model": "item/music_disc_shinysmilystoryhololiveidolprojectone"
-        }
-      },
-      {
-        "threshold": 6,
+        "threshold": 14,
         "model": {
           "type": "model",
           "model": "item/music_disc_onethree"
         }
       },
       {
-        "threshold": 7,
+        "threshold": 6,
         "model": {
           "type": "model",
           "model": "item/music_disc_onefour"
         }
       },
       {
-        "threshold": 8,
+        "threshold": 7,
         "model": {
           "type": "model",
           "model": "item/music_disc_onefive"
+        }
+      },
+      {
+        "threshold": 8,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_ghostone"
+        }
+      },
+      {
+        "threshold": 13,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_onezero"
+        }
+      },
+      {
+        "threshold": 12,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_prismmelodyhololiveidolprojectone"
+        }
+      },
+      {
+        "threshold": 9,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_yummyone"
+        }
+      },
+      {
+        "threshold": 10,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_threeonetwotakuinoueone"
+        }
+      },
+      {
+        "threshold": 11,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_stellarstellarone"
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_onezerozero"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_onezerozerozero"
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_piecesone"
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_shinysmilystoryhololiveidolprojectone"
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "model",
+          "model": "item/music_disc_nfourgioverblfourstalistairterroreditone"
         }
       }
     ]

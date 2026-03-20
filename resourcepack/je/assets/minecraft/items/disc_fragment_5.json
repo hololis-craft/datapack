@@ -8,108 +8,115 @@
     },
     "entries": [
       {
-        "threshold": 15,
+        "threshold": 16,
         "model": {
           "type": "model",
           "model": "item/fragment_ridinondreamshololiveidolprojectone"
         }
       },
       {
-        "threshold": 14,
+        "threshold": 15,
         "model": {
           "type": "model",
           "model": "item/fragment_remixone"
         }
       },
       {
-        "threshold": 13,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_ghostone"
-        }
-      },
-      {
-        "threshold": 12,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_onezero"
-        }
-      },
-      {
-        "threshold": 9,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_prismmelodyhololiveidolprojectone"
-        }
-      },
-      {
-        "threshold": 10,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_yummyone"
-        }
-      },
-      {
-        "threshold": 11,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_threeonetwotakuinoueone"
-        }
-      },
-      {
-        "threshold": 1,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_stellarstellarone"
-        }
-      },
-      {
-        "threshold": 2,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_onezerozero"
-        }
-      },
-      {
-        "threshold": 3,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_onezerozerozero"
-        }
-      },
-      {
-        "threshold": 4,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_piecesone"
-        }
-      },
-      {
-        "threshold": 5,
-        "model": {
-          "type": "model",
-          "model": "item/fragment_shinysmilystoryhololiveidolprojectone"
-        }
-      },
-      {
-        "threshold": 6,
+        "threshold": 14,
         "model": {
           "type": "model",
           "model": "item/fragment_onethree"
         }
       },
       {
-        "threshold": 7,
+        "threshold": 6,
         "model": {
           "type": "model",
           "model": "item/fragment_onefour"
         }
       },
       {
-        "threshold": 8,
+        "threshold": 7,
         "model": {
           "type": "model",
           "model": "item/fragment_onefive"
+        }
+      },
+      {
+        "threshold": 8,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_ghostone"
+        }
+      },
+      {
+        "threshold": 13,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_onezero"
+        }
+      },
+      {
+        "threshold": 12,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_prismmelodyhololiveidolprojectone"
+        }
+      },
+      {
+        "threshold": 9,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_yummyone"
+        }
+      },
+      {
+        "threshold": 10,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_threeonetwotakuinoueone"
+        }
+      },
+      {
+        "threshold": 11,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_stellarstellarone"
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_onezerozero"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_onezerozerozero"
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_piecesone"
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_shinysmilystoryhololiveidolprojectone"
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "model",
+          "model": "item/fragment_nfourgioverblfourstalistairterroreditone"
         }
       }
     ]
