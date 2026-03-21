@@ -538,5 +538,13 @@
         "stream": true
       }
     ]
+  },
+  "item.goat_horn.stellarstellar": {
+    "sounds": [
+      {
+        "name": "item/goat_horn/stellarstellar"
+      }
+    ],
+    "subtitle": "subtitles.item.goat_horn.play"
   }
 }
