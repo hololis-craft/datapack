@@ -1,0 +1,61 @@
+name: Build Resource Pack
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "resourcepack/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # - name: Checkout PackConverter
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: GeyserMC/PackConverter
+      #     path: PackConverter
+
+      # - name: Cache PackConverter Gradle dependencies
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: PackConverter/.gradle
+      #     key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-gradle-
+
+      # - name: Configure PackConverter
+      #   run: |
+      #     cd PackConverter
+      #     ./gradlew --build-cache build
+      - name: Create Resource Pack
+        run: |
+          cd resourcepack
+          bash mkpack.bash
+          mkdir webroot
+          mv hololis_craft_je.zip webroot/hololis_craft_je.zip
+
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        with:
+          path: resourcepack/webroot
+
+  deploy-pages:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
