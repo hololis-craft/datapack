@@ -1,20 +1,15 @@
 {
   "display": {
     "title": {
-      "translate": "頭コレクター"
+      "translate": "廃課金"
     },
-    "description": "すべてのホロメンの頭を集める",
+    "description": "おいくら程お使いになられましたか？",
     "icon": {
-      "id": "minecraft:player_head",
-      "components": {
-        "minecraft:profile": {
-          "name": "supernenechii"
-        },
-        "minecraft:enchantment_glint_override": true
-      }
+      "id": "minecraft:nether_star"
     },
     "announce_to_chat": true,
-    "show_toast": true
+    "show_toast": true,
+    "frame": "challenge"
   },
   "criteria": {
     "tokinosorach_skin_01": {
@@ -8882,527 +8877,1185 @@
   },
   "requirements": [
     [
-      "tokinosorach_skin_01",
-      "tokinosorach_skin_02",
-      "tokinosorach_skin_03",
+      "tokinosorach_skin_01"
+    ],
+    [
+      "tokinosorach_skin_02"
+    ],
+    [
+      "tokinosorach_skin_03"
+    ],
+    [
       "tokinosorach_skin_04"
     ],
     [
-      "robocosan_skin_01",
-      "robocosan_skin_02",
-      "robocosan_skin_03",
-      "robocosan_skin_04",
-      "robocosan_skin_05",
-      "robocosan_skin_06",
-      "robocosan_skin_07",
-      "robocosan_skin_08",
-      "robocosan_skin_09",
-      "robocosan_skin_10",
+      "robocosan_skin_01"
+    ],
+    [
+      "robocosan_skin_02"
+    ],
+    [
+      "robocosan_skin_03"
+    ],
+    [
+      "robocosan_skin_04"
+    ],
+    [
+      "robocosan_skin_05"
+    ],
+    [
+      "robocosan_skin_06"
+    ],
+    [
+      "robocosan_skin_07"
+    ],
+    [
+      "robocosan_skin_08"
+    ],
+    [
+      "robocosan_skin_09"
+    ],
+    [
+      "robocosan_skin_10"
+    ],
+    [
       "robocosan_skin_11"
     ],
     [
-      "AZKi__skin_01",
-      "AZKi__skin_02",
-      "AZKi__skin_03",
+      "AZKi__skin_01"
+    ],
+    [
+      "AZKi__skin_02"
+    ],
+    [
+      "AZKi__skin_03"
+    ],
+    [
       "AZKi__skin_04"
     ],
     [
-      "sakuramiko35_skin_01",
-      "sakuramiko35_skin_02",
-      "sakuramiko35_skin_03",
-      "sakuramiko35_skin_04",
-      "sakuramiko35_skin_05",
-      "sakuramiko35_skin_06",
-      "sakuramiko35_skin_07",
-      "sakuramiko35_skin_08",
-      "sakuramiko35_skin_09",
-      "sakuramiko35_skin_10",
-      "sakuramiko35_skin_11",
-      "sakuramiko35_skin_12",
-      "sakuramiko35_skin_13",
-      "sakuramiko35_skin_14",
-      "sakuramiko35_skin_15",
-      "sakuramiko35_skin_16",
+      "sakuramiko35_skin_01"
+    ],
+    [
+      "sakuramiko35_skin_02"
+    ],
+    [
+      "sakuramiko35_skin_03"
+    ],
+    [
+      "sakuramiko35_skin_04"
+    ],
+    [
+      "sakuramiko35_skin_05"
+    ],
+    [
+      "sakuramiko35_skin_06"
+    ],
+    [
+      "sakuramiko35_skin_07"
+    ],
+    [
+      "sakuramiko35_skin_08"
+    ],
+    [
+      "sakuramiko35_skin_09"
+    ],
+    [
+      "sakuramiko35_skin_10"
+    ],
+    [
+      "sakuramiko35_skin_11"
+    ],
+    [
+      "sakuramiko35_skin_12"
+    ],
+    [
+      "sakuramiko35_skin_13"
+    ],
+    [
+      "sakuramiko35_skin_14"
+    ],
+    [
+      "sakuramiko35_skin_15"
+    ],
+    [
+      "sakuramiko35_skin_16"
+    ],
+    [
       "sakuramiko35_skin_17"
     ],
     [
-      "Suisei_HONMONO_skin_01",
-      "Suisei_HONMONO_skin_02",
-      "Suisei_HONMONO_skin_03",
-      "Suisei_HONMONO_skin_04",
-      "Suisei_HONMONO_skin_05",
-      "Suisei_HONMONO_skin_06",
-      "Suisei_HONMONO_skin_07",
-      "Suisei_HONMONO_skin_08",
-      "Suisei_HONMONO_skin_09",
+      "Suisei_HONMONO_skin_01"
+    ],
+    [
+      "Suisei_HONMONO_skin_02"
+    ],
+    [
+      "Suisei_HONMONO_skin_03"
+    ],
+    [
+      "Suisei_HONMONO_skin_04"
+    ],
+    [
+      "Suisei_HONMONO_skin_05"
+    ],
+    [
+      "Suisei_HONMONO_skin_06"
+    ],
+    [
+      "Suisei_HONMONO_skin_07"
+    ],
+    [
+      "Suisei_HONMONO_skin_08"
+    ],
+    [
+      "Suisei_HONMONO_skin_09"
+    ],
+    [
       "Suisei_HONMONO_skin_10"
     ],
     [
-      "SUISEI_HOSIMATI_skin_01",
-      "SUISEI_HOSIMATI_skin_02",
-      "SUISEI_HOSIMATI_skin_03",
+      "SUISEI_HOSIMATI_skin_01"
+    ],
+    [
+      "SUISEI_HOSIMATI_skin_02"
+    ],
+    [
+      "SUISEI_HOSIMATI_skin_03"
+    ],
+    [
       "SUISEI_HOSIMATI_skin_04"
     ],
     [
-      "yozoramel_skin_01",
+      "yozoramel_skin_01"
+    ],
+    [
       "yozoramel_skin_02"
     ],
     [
-      "akirosenthal_skin_01",
-      "akirosenthal_skin_02",
-      "akirosenthal_skin_03",
-      "akirosenthal_skin_04",
-      "akirosenthal_skin_05",
-      "akirosenthal_skin_06",
-      "akirosenthal_skin_07",
-      "akirosenthal_skin_08",
-      "akirosenthal_skin_09",
+      "akirosenthal_skin_01"
+    ],
+    [
+      "akirosenthal_skin_02"
+    ],
+    [
+      "akirosenthal_skin_03"
+    ],
+    [
+      "akirosenthal_skin_04"
+    ],
+    [
+      "akirosenthal_skin_05"
+    ],
+    [
+      "akirosenthal_skin_06"
+    ],
+    [
+      "akirosenthal_skin_07"
+    ],
+    [
+      "akirosenthal_skin_08"
+    ],
+    [
+      "akirosenthal_skin_09"
+    ],
+    [
       "akirosenthal_skin_10"
     ],
     [
-      "HAACHAMA810_skin_01",
-      "HAACHAMA810_skin_02",
-      "HAACHAMA810_skin_03",
-      "HAACHAMA810_skin_04",
-      "HAACHAMA810_skin_05",
-      "HAACHAMA810_skin_06",
-      "HAACHAMA810_skin_07",
-      "HAACHAMA810_skin_08",
-      "HAACHAMA810_skin_09",
-      "HAACHAMA810_skin_10",
-      "HAACHAMA810_skin_11",
-      "HAACHAMA810_skin_12",
+      "HAACHAMA810_skin_01"
+    ],
+    [
+      "HAACHAMA810_skin_02"
+    ],
+    [
+      "HAACHAMA810_skin_03"
+    ],
+    [
+      "HAACHAMA810_skin_04"
+    ],
+    [
+      "HAACHAMA810_skin_05"
+    ],
+    [
+      "HAACHAMA810_skin_06"
+    ],
+    [
+      "HAACHAMA810_skin_07"
+    ],
+    [
+      "HAACHAMA810_skin_08"
+    ],
+    [
+      "HAACHAMA810_skin_09"
+    ],
+    [
+      "HAACHAMA810_skin_10"
+    ],
+    [
+      "HAACHAMA810_skin_11"
+    ],
+    [
+      "HAACHAMA810_skin_12"
+    ],
+    [
       "HAACHAMA810_skin_13"
     ],
     [
-      "natsuiromatsuri_skin_01",
-      "natsuiromatsuri_skin_02",
-      "natsuiromatsuri_skin_03",
-      "natsuiromatsuri_skin_04",
-      "natsuiromatsuri_skin_05",
-      "natsuiromatsuri_skin_06",
+      "natsuiromatsuri_skin_01"
+    ],
+    [
+      "natsuiromatsuri_skin_02"
+    ],
+    [
+      "natsuiromatsuri_skin_03"
+    ],
+    [
+      "natsuiromatsuri_skin_04"
+    ],
+    [
+      "natsuiromatsuri_skin_05"
+    ],
+    [
+      "natsuiromatsuri_skin_06"
+    ],
+    [
       "natsuiromatsuri_skin_07"
     ],
     [
-      "murasakishion_skin_01",
-      "murasakishion_skin_02",
-      "murasakishion_skin_03",
-      "murasakishion_skin_04",
-      "murasakishion_skin_05",
+      "murasakishion_skin_01"
+    ],
+    [
+      "murasakishion_skin_02"
+    ],
+    [
+      "murasakishion_skin_03"
+    ],
+    [
+      "murasakishion_skin_04"
+    ],
+    [
+      "murasakishion_skin_05"
+    ],
+    [
       "murasakishion_skin_06"
     ],
     [
-      "nakiriayame_skin_01",
-      "nakiriayame_skin_02",
-      "nakiriayame_skin_03",
-      "nakiriayame_skin_04",
-      "nakiriayame_skin_05",
-      "nakiriayame_skin_06",
-      "nakiriayame_skin_07",
+      "nakiriayame_skin_01"
+    ],
+    [
+      "nakiriayame_skin_02"
+    ],
+    [
+      "nakiriayame_skin_03"
+    ],
+    [
+      "nakiriayame_skin_04"
+    ],
+    [
+      "nakiriayame_skin_05"
+    ],
+    [
+      "nakiriayame_skin_06"
+    ],
+    [
+      "nakiriayame_skin_07"
+    ],
+    [
       "nakiriayame_skin_08"
     ],
     [
-      "yuzukichoco_skin_01",
-      "yuzukichoco_skin_02",
+      "yuzukichoco_skin_01"
+    ],
+    [
+      "yuzukichoco_skin_02"
+    ],
+    [
       "yuzukichoco_skin_03"
     ],
     [
-      "oozorasubaru_skin_01",
-      "oozorasubaru_skin_02",
-      "oozorasubaru_skin_03",
-      "oozorasubaru_skin_04",
-      "oozorasubaru_skin_05",
-      "oozorasubaru_skin_06",
+      "oozorasubaru_skin_01"
+    ],
+    [
+      "oozorasubaru_skin_02"
+    ],
+    [
+      "oozorasubaru_skin_03"
+    ],
+    [
+      "oozorasubaru_skin_04"
+    ],
+    [
+      "oozorasubaru_skin_05"
+    ],
+    [
+      "oozorasubaru_skin_06"
+    ],
+    [
       "oozorasubaru_skin_07"
     ],
     [
-      "shirakamifubuki_skin_01",
-      "shirakamifubuki_skin_02",
-      "shirakamifubuki_skin_03",
-      "shirakamifubuki_skin_04",
-      "shirakamifubuki_skin_05",
-      "shirakamifubuki_skin_06",
-      "shirakamifubuki_skin_07",
+      "shirakamifubuki_skin_01"
+    ],
+    [
+      "shirakamifubuki_skin_02"
+    ],
+    [
+      "shirakamifubuki_skin_03"
+    ],
+    [
+      "shirakamifubuki_skin_04"
+    ],
+    [
+      "shirakamifubuki_skin_05"
+    ],
+    [
+      "shirakamifubuki_skin_06"
+    ],
+    [
+      "shirakamifubuki_skin_07"
+    ],
+    [
       "shirakamifubuki_skin_08"
     ],
     [
-      "ookamimio_skin_01",
-      "ookamimio_skin_02",
-      "ookamimio_skin_03",
-      "ookamimio_skin_04",
-      "ookamimio_skin_05",
+      "ookamimio_skin_01"
+    ],
+    [
+      "ookamimio_skin_02"
+    ],
+    [
+      "ookamimio_skin_03"
+    ],
+    [
+      "ookamimio_skin_04"
+    ],
+    [
+      "ookamimio_skin_05"
+    ],
+    [
       "ookamimio_skin_06"
     ],
     [
-      "okayu_nekoneko22_skin_01",
-      "okayu_nekoneko22_skin_02",
-      "okayu_nekoneko22_skin_03",
-      "okayu_nekoneko22_skin_04",
-      "okayu_nekoneko22_skin_05",
-      "okayu_nekoneko22_skin_06",
+      "okayu_nekoneko22_skin_01"
+    ],
+    [
+      "okayu_nekoneko22_skin_02"
+    ],
+    [
+      "okayu_nekoneko22_skin_03"
+    ],
+    [
+      "okayu_nekoneko22_skin_04"
+    ],
+    [
+      "okayu_nekoneko22_skin_05"
+    ],
+    [
+      "okayu_nekoneko22_skin_06"
+    ],
+    [
       "okayu_nekoneko22_skin_07"
     ],
     [
       "nekomata_okayu_skin_01"
     ],
     [
-      "inugamikorone_skin_01",
-      "inugamikorone_skin_02",
+      "inugamikorone_skin_01"
+    ],
+    [
+      "inugamikorone_skin_02"
+    ],
+    [
       "inugamikorone_skin_03"
     ],
     [
-      "Usadapekora_skin_01",
-      "Usadapekora_skin_02",
-      "Usadapekora_skin_03",
+      "Usadapekora_skin_01"
+    ],
+    [
+      "Usadapekora_skin_02"
+    ],
+    [
+      "Usadapekora_skin_03"
+    ],
+    [
       "Usadapekora_skin_04"
     ],
     [
-      "shiranuiflare_skin_01",
-      "shiranuiflare_skin_02",
-      "shiranuiflare_skin_03",
-      "shiranuiflare_skin_04",
-      "shiranuiflare_skin_05",
-      "shiranuiflare_skin_06",
+      "shiranuiflare_skin_01"
+    ],
+    [
+      "shiranuiflare_skin_02"
+    ],
+    [
+      "shiranuiflare_skin_03"
+    ],
+    [
+      "shiranuiflare_skin_04"
+    ],
+    [
+      "shiranuiflare_skin_05"
+    ],
+    [
+      "shiranuiflare_skin_06"
+    ],
+    [
       "shiranuiflare_skin_07"
     ],
     [
-      "shiroganenoel_skin_01",
-      "shiroganenoel_skin_02",
-      "shiroganenoel_skin_03",
-      "shiroganenoel_skin_04",
-      "shiroganenoel_skin_05",
-      "shiroganenoel_skin_06",
-      "shiroganenoel_skin_07",
-      "shiroganenoel_skin_08",
-      "shiroganenoel_skin_09",
-      "shiroganenoel_skin_10",
+      "shiroganenoel_skin_01"
+    ],
+    [
+      "shiroganenoel_skin_02"
+    ],
+    [
+      "shiroganenoel_skin_03"
+    ],
+    [
+      "shiroganenoel_skin_04"
+    ],
+    [
+      "shiroganenoel_skin_05"
+    ],
+    [
+      "shiroganenoel_skin_06"
+    ],
+    [
+      "shiroganenoel_skin_07"
+    ],
+    [
+      "shiroganenoel_skin_08"
+    ],
+    [
+      "shiroganenoel_skin_09"
+    ],
+    [
+      "shiroganenoel_skin_10"
+    ],
+    [
       "shiroganenoel_skin_11"
     ],
     [
-      "houshou_marine_skin_01",
+      "houshou_marine_skin_01"
+    ],
+    [
       "houshou_marine_skin_02"
     ],
     [
       "uruharushia_skin_01"
     ],
     [
-      "Amane_Kanata_skin_01",
-      "Amane_Kanata_skin_02",
-      "Amane_Kanata_skin_03",
-      "Amane_Kanata_skin_04",
-      "Amane_Kanata_skin_05",
-      "Amane_Kanata_skin_06",
+      "Amane_Kanata_skin_01"
+    ],
+    [
+      "Amane_Kanata_skin_02"
+    ],
+    [
+      "Amane_Kanata_skin_03"
+    ],
+    [
+      "Amane_Kanata_skin_04"
+    ],
+    [
+      "Amane_Kanata_skin_05"
+    ],
+    [
+      "Amane_Kanata_skin_06"
+    ],
+    [
       "Amane_Kanata_skin_07"
     ],
     [
-      "Tsunomakiwatame_skin_01",
-      "Tsunomakiwatame_skin_02",
-      "Tsunomakiwatame_skin_03",
-      "Tsunomakiwatame_skin_04",
-      "Tsunomakiwatame_skin_05",
-      "Tsunomakiwatame_skin_06",
-      "Tsunomakiwatame_skin_07",
-      "Tsunomakiwatame_skin_08",
-      "Tsunomakiwatame_skin_09",
-      "Tsunomakiwatame_skin_10",
+      "Tsunomakiwatame_skin_01"
+    ],
+    [
+      "Tsunomakiwatame_skin_02"
+    ],
+    [
+      "Tsunomakiwatame_skin_03"
+    ],
+    [
+      "Tsunomakiwatame_skin_04"
+    ],
+    [
+      "Tsunomakiwatame_skin_05"
+    ],
+    [
+      "Tsunomakiwatame_skin_06"
+    ],
+    [
+      "Tsunomakiwatame_skin_07"
+    ],
+    [
+      "Tsunomakiwatame_skin_08"
+    ],
+    [
+      "Tsunomakiwatame_skin_09"
+    ],
+    [
+      "Tsunomakiwatame_skin_10"
+    ],
+    [
       "Tsunomakiwatame_skin_11"
     ],
     [
-      "Towasama_skin_01",
-      "Towasama_skin_02",
-      "Towasama_skin_03",
-      "Towasama_skin_04",
-      "Towasama_skin_05",
-      "Towasama_skin_06",
-      "Towasama_skin_07",
+      "Towasama_skin_01"
+    ],
+    [
+      "Towasama_skin_02"
+    ],
+    [
+      "Towasama_skin_03"
+    ],
+    [
+      "Towasama_skin_04"
+    ],
+    [
+      "Towasama_skin_05"
+    ],
+    [
+      "Towasama_skin_06"
+    ],
+    [
+      "Towasama_skin_07"
+    ],
+    [
       "Towasama_skin_08"
     ],
     [
-      "HimemoriLuna_skin_01",
-      "HimemoriLuna_skin_02",
-      "HimemoriLuna_skin_03",
-      "HimemoriLuna_skin_04",
-      "HimemoriLuna_skin_05",
+      "HimemoriLuna_skin_01"
+    ],
+    [
+      "HimemoriLuna_skin_02"
+    ],
+    [
+      "HimemoriLuna_skin_03"
+    ],
+    [
+      "HimemoriLuna_skin_04"
+    ],
+    [
+      "HimemoriLuna_skin_05"
+    ],
+    [
       "HimemoriLuna_skin_06"
     ],
     [
-      "Lamy_Yukihana_skin_01",
-      "Lamy_Yukihana_skin_02",
-      "Lamy_Yukihana_skin_03",
-      "Lamy_Yukihana_skin_04",
-      "Lamy_Yukihana_skin_05",
-      "Lamy_Yukihana_skin_06",
+      "Lamy_Yukihana_skin_01"
+    ],
+    [
+      "Lamy_Yukihana_skin_02"
+    ],
+    [
+      "Lamy_Yukihana_skin_03"
+    ],
+    [
+      "Lamy_Yukihana_skin_04"
+    ],
+    [
+      "Lamy_Yukihana_skin_05"
+    ],
+    [
+      "Lamy_Yukihana_skin_06"
+    ],
+    [
       "Lamy_Yukihana_skin_07"
     ],
     [
-      "supernenechii_skin_01",
-      "supernenechii_skin_02",
-      "supernenechii_skin_03",
-      "supernenechii_skin_04",
-      "supernenechii_skin_05",
-      "supernenechii_skin_06",
+      "supernenechii_skin_01"
+    ],
+    [
+      "supernenechii_skin_02"
+    ],
+    [
+      "supernenechii_skin_03"
+    ],
+    [
+      "supernenechii_skin_04"
+    ],
+    [
+      "supernenechii_skin_05"
+    ],
+    [
+      "supernenechii_skin_06"
+    ],
+    [
       "supernenechii_skin_07"
     ],
     [
-      "botaaan_skin_01",
-      "botaaan_skin_02",
-      "botaaan_skin_03",
-      "botaaan_skin_04",
-      "botaaan_skin_05",
-      "botaaan_skin_06",
+      "botaaan_skin_01"
+    ],
+    [
+      "botaaan_skin_02"
+    ],
+    [
+      "botaaan_skin_03"
+    ],
+    [
+      "botaaan_skin_04"
+    ],
+    [
+      "botaaan_skin_05"
+    ],
+    [
+      "botaaan_skin_06"
+    ],
+    [
       "botaaan_skin_07"
     ],
     [
-      "omapol_skin_01",
-      "omapol_skin_02",
-      "omapol_skin_03",
-      "omapol_skin_04",
-      "omapol_skin_05",
-      "omapol_skin_06",
+      "omapol_skin_01"
+    ],
+    [
+      "omapol_skin_02"
+    ],
+    [
+      "omapol_skin_03"
+    ],
+    [
+      "omapol_skin_04"
+    ],
+    [
+      "omapol_skin_05"
+    ],
+    [
+      "omapol_skin_06"
+    ],
+    [
       "omapol_skin_07"
     ],
     [
-      "Laplus_sama_skin_01",
-      "Laplus_sama_skin_02",
-      "Laplus_sama_skin_03",
+      "Laplus_sama_skin_01"
+    ],
+    [
+      "Laplus_sama_skin_02"
+    ],
+    [
+      "Laplus_sama_skin_03"
+    ],
+    [
       "Laplus_sama_skin_04"
     ],
     [
-      "takanelui61_skin_01",
-      "takanelui61_skin_02",
-      "takanelui61_skin_03",
-      "takanelui61_skin_04",
-      "takanelui61_skin_05",
-      "takanelui61_skin_06",
-      "takanelui61_skin_07",
-      "takanelui61_skin_08",
-      "takanelui61_skin_09",
+      "takanelui61_skin_01"
+    ],
+    [
+      "takanelui61_skin_02"
+    ],
+    [
+      "takanelui61_skin_03"
+    ],
+    [
+      "takanelui61_skin_04"
+    ],
+    [
+      "takanelui61_skin_05"
+    ],
+    [
+      "takanelui61_skin_06"
+    ],
+    [
+      "takanelui61_skin_07"
+    ],
+    [
+      "takanelui61_skin_08"
+    ],
+    [
+      "takanelui61_skin_09"
+    ],
+    [
       "takanelui61_skin_10"
     ],
     [
-      "KoyoriHakui315_skin_01",
-      "KoyoriHakui315_skin_02",
-      "KoyoriHakui315_skin_03",
-      "KoyoriHakui315_skin_04",
-      "KoyoriHakui315_skin_05",
-      "KoyoriHakui315_skin_06",
-      "KoyoriHakui315_skin_07",
-      "KoyoriHakui315_skin_08",
-      "KoyoriHakui315_skin_09",
+      "KoyoriHakui315_skin_01"
+    ],
+    [
+      "KoyoriHakui315_skin_02"
+    ],
+    [
+      "KoyoriHakui315_skin_03"
+    ],
+    [
+      "KoyoriHakui315_skin_04"
+    ],
+    [
+      "KoyoriHakui315_skin_05"
+    ],
+    [
+      "KoyoriHakui315_skin_06"
+    ],
+    [
+      "KoyoriHakui315_skin_07"
+    ],
+    [
+      "KoyoriHakui315_skin_08"
+    ],
+    [
+      "KoyoriHakui315_skin_09"
+    ],
+    [
       "KoyoriHakui315_skin_10"
     ],
     [
-      "matamatasakamata_skin_01",
-      "matamatasakamata_skin_02",
-      "matamatasakamata_skin_03",
-      "matamatasakamata_skin_04",
-      "matamatasakamata_skin_05",
+      "matamatasakamata_skin_01"
+    ],
+    [
+      "matamatasakamata_skin_02"
+    ],
+    [
+      "matamatasakamata_skin_03"
+    ],
+    [
+      "matamatasakamata_skin_04"
+    ],
+    [
+      "matamatasakamata_skin_05"
+    ],
+    [
       "matamatasakamata_skin_06"
     ],
     [
-      "Kazama168_skin_01",
-      "Kazama168_skin_02",
-      "Kazama168_skin_03",
-      "Kazama168_skin_04",
-      "Kazama168_skin_05",
-      "Kazama168_skin_06",
+      "Kazama168_skin_01"
+    ],
+    [
+      "Kazama168_skin_02"
+    ],
+    [
+      "Kazama168_skin_03"
+    ],
+    [
+      "Kazama168_skin_04"
+    ],
+    [
+      "Kazama168_skin_05"
+    ],
+    [
+      "Kazama168_skin_06"
+    ],
+    [
       "Kazama168_skin_07"
     ],
     [
-      "Ayunda_Risu_skin_01",
-      "Ayunda_Risu_skin_02",
-      "Ayunda_Risu_skin_03",
-      "Ayunda_Risu_skin_04",
-      "Ayunda_Risu_skin_05",
-      "Ayunda_Risu_skin_06",
-      "Ayunda_Risu_skin_07",
-      "Ayunda_Risu_skin_08",
-      "Ayunda_Risu_skin_09",
+      "Ayunda_Risu_skin_01"
+    ],
+    [
+      "Ayunda_Risu_skin_02"
+    ],
+    [
+      "Ayunda_Risu_skin_03"
+    ],
+    [
+      "Ayunda_Risu_skin_04"
+    ],
+    [
+      "Ayunda_Risu_skin_05"
+    ],
+    [
+      "Ayunda_Risu_skin_06"
+    ],
+    [
+      "Ayunda_Risu_skin_07"
+    ],
+    [
+      "Ayunda_Risu_skin_08"
+    ],
+    [
+      "Ayunda_Risu_skin_09"
+    ],
+    [
       "Ayunda_Risu_skin_10"
     ],
     [
-      "itsmoona_skin_01",
-      "itsmoona_skin_02",
-      "itsmoona_skin_03",
-      "itsmoona_skin_04",
+      "itsmoona_skin_01"
+    ],
+    [
+      "itsmoona_skin_02"
+    ],
+    [
+      "itsmoona_skin_03"
+    ],
+    [
+      "itsmoona_skin_04"
+    ],
+    [
       "itsmoona_skin_05"
     ],
     [
-      "imoonya_skin_01",
-      "imoonya_skin_02",
+      "imoonya_skin_01"
+    ],
+    [
+      "imoonya_skin_02"
+    ],
+    [
       "imoonya_skin_03"
     ],
     [
-      "IOFI15_skin_01",
+      "IOFI15_skin_01"
+    ],
+    [
       "IOFI15_skin_02"
     ],
     [
-      "kureijiollie_skin_01",
-      "kureijiollie_skin_02",
-      "kureijiollie_skin_03",
-      "kureijiollie_skin_04",
-      "kureijiollie_skin_05",
-      "kureijiollie_skin_06",
-      "kureijiollie_skin_07",
-      "kureijiollie_skin_08",
+      "kureijiollie_skin_01"
+    ],
+    [
+      "kureijiollie_skin_02"
+    ],
+    [
+      "kureijiollie_skin_03"
+    ],
+    [
+      "kureijiollie_skin_04"
+    ],
+    [
+      "kureijiollie_skin_05"
+    ],
+    [
+      "kureijiollie_skin_06"
+    ],
+    [
+      "kureijiollie_skin_07"
+    ],
+    [
+      "kureijiollie_skin_08"
+    ],
+    [
       "kureijiollie_skin_09"
     ],
     [
-      "anyaaaaam3lfi_skin_01",
-      "anyaaaaam3lfi_skin_02",
-      "anyaaaaam3lfi_skin_03",
-      "anyaaaaam3lfi_skin_04",
-      "anyaaaaam3lfi_skin_05",
-      "anyaaaaam3lfi_skin_06",
+      "anyaaaaam3lfi_skin_01"
+    ],
+    [
+      "anyaaaaam3lfi_skin_02"
+    ],
+    [
+      "anyaaaaam3lfi_skin_03"
+    ],
+    [
+      "anyaaaaam3lfi_skin_04"
+    ],
+    [
+      "anyaaaaam3lfi_skin_05"
+    ],
+    [
+      "anyaaaaam3lfi_skin_06"
+    ],
+    [
       "anyaaaaam3lfi_skin_07"
     ],
     [
-      "reineeeee_skin_01",
-      "reineeeee_skin_02",
-      "reineeeee_skin_03",
-      "reineeeee_skin_04",
+      "reineeeee_skin_01"
+    ],
+    [
+      "reineeeee_skin_02"
+    ],
+    [
+      "reineeeee_skin_03"
+    ],
+    [
+      "reineeeee_skin_04"
+    ],
+    [
       "reineeeee_skin_05"
     ],
     [
-      "VestiaZeta_V7_skin_01",
-      "VestiaZeta_V7_skin_02",
-      "VestiaZeta_V7_skin_03",
-      "VestiaZeta_V7_skin_04",
+      "VestiaZeta_V7_skin_01"
+    ],
+    [
+      "VestiaZeta_V7_skin_02"
+    ],
+    [
+      "VestiaZeta_V7_skin_03"
+    ],
+    [
+      "VestiaZeta_V7_skin_04"
+    ],
+    [
       "VestiaZeta_V7_skin_05"
     ],
     [
-      "lakaela_skin_01",
-      "lakaela_skin_02",
-      "lakaela_skin_03",
-      "lakaela_skin_04",
+      "lakaela_skin_01"
+    ],
+    [
+      "lakaela_skin_02"
+    ],
+    [
+      "lakaela_skin_03"
+    ],
+    [
+      "lakaela_skin_04"
+    ],
+    [
       "lakaela_skin_05"
     ],
     [
-      "KobokanAer_skin_01",
-      "KobokanAer_skin_02",
-      "KobokanAer_skin_03",
+      "KobokanAer_skin_01"
+    ],
+    [
+      "KobokanAer_skin_02"
+    ],
+    [
+      "KobokanAer_skin_03"
+    ],
+    [
       "KobokanAer_skin_04"
     ],
     [
-      "moricalliopeEN_skin_01",
-      "moricalliopeEN_skin_02",
+      "moricalliopeEN_skin_01"
+    ],
+    [
+      "moricalliopeEN_skin_02"
+    ],
+    [
       "moricalliopeEN_skin_03"
     ],
     [
-      "Kiara_HOLOEN_skin_01",
-      "Kiara_HOLOEN_skin_02",
-      "Kiara_HOLOEN_skin_03",
-      "Kiara_HOLOEN_skin_04",
-      "Kiara_HOLOEN_skin_05",
-      "Kiara_HOLOEN_skin_06",
-      "Kiara_HOLOEN_skin_07",
+      "Kiara_HOLOEN_skin_01"
+    ],
+    [
+      "Kiara_HOLOEN_skin_02"
+    ],
+    [
+      "Kiara_HOLOEN_skin_03"
+    ],
+    [
+      "Kiara_HOLOEN_skin_04"
+    ],
+    [
+      "Kiara_HOLOEN_skin_05"
+    ],
+    [
+      "Kiara_HOLOEN_skin_06"
+    ],
+    [
+      "Kiara_HOLOEN_skin_07"
+    ],
+    [
       "Kiara_HOLOEN_skin_08"
     ],
     [
-      "NinoIna_skin_01",
-      "NinoIna_skin_02",
-      "NinoIna_skin_03",
-      "NinoIna_skin_04",
-      "NinoIna_skin_05",
-      "NinoIna_skin_06",
-      "NinoIna_skin_07",
+      "NinoIna_skin_01"
+    ],
+    [
+      "NinoIna_skin_02"
+    ],
+    [
+      "NinoIna_skin_03"
+    ],
+    [
+      "NinoIna_skin_04"
+    ],
+    [
+      "NinoIna_skin_05"
+    ],
+    [
+      "NinoIna_skin_06"
+    ],
+    [
+      "NinoIna_skin_07"
+    ],
+    [
       "NinoIna_skin_08"
     ],
     [
-      "GaaoGura_skin_01",
-      "GaaoGura_skin_02",
-      "GaaoGura_skin_03",
-      "GaaoGura_skin_04",
-      "GaaoGura_skin_05",
+      "GaaoGura_skin_01"
+    ],
+    [
+      "GaaoGura_skin_02"
+    ],
+    [
+      "GaaoGura_skin_03"
+    ],
+    [
+      "GaaoGura_skin_04"
+    ],
+    [
+      "GaaoGura_skin_05"
+    ],
+    [
       "GaaoGura_skin_06"
     ],
     [
-      "amwatson_skin_01",
-      "amwatson_skin_02",
-      "amwatson_skin_03",
-      "amwatson_skin_04",
-      "amwatson_skin_05",
-      "amwatson_skin_06",
+      "amwatson_skin_01"
+    ],
+    [
+      "amwatson_skin_02"
+    ],
+    [
+      "amwatson_skin_03"
+    ],
+    [
+      "amwatson_skin_04"
+    ],
+    [
+      "amwatson_skin_05"
+    ],
+    [
+      "amwatson_skin_06"
+    ],
+    [
       "amwatson_skin_07"
     ],
     [
-      "IRySuperGlue_skin_01",
-      "IRySuperGlue_skin_02",
-      "IRySuperGlue_skin_03",
-      "IRySuperGlue_skin_04",
-      "IRySuperGlue_skin_05",
+      "IRySuperGlue_skin_01"
+    ],
+    [
+      "IRySuperGlue_skin_02"
+    ],
+    [
+      "IRySuperGlue_skin_03"
+    ],
+    [
+      "IRySuperGlue_skin_04"
+    ],
+    [
+      "IRySuperGlue_skin_05"
+    ],
+    [
       "IRySuperGlue_skin_06"
     ],
     [
-      "faunaceres_skin_01",
-      "faunaceres_skin_02",
-      "faunaceres_skin_03",
+      "faunaceres_skin_01"
+    ],
+    [
+      "faunaceres_skin_02"
+    ],
+    [
+      "faunaceres_skin_03"
+    ],
+    [
       "faunaceres_skin_04"
     ],
     [
-      "ourkronii_skin_01",
-      "ourkronii_skin_02",
-      "ourkronii_skin_03",
-      "ourkronii_skin_04",
-      "ourkronii_skin_05",
-      "ourkronii_skin_06",
-      "ourkronii_skin_07",
+      "ourkronii_skin_01"
+    ],
+    [
+      "ourkronii_skin_02"
+    ],
+    [
+      "ourkronii_skin_03"
+    ],
+    [
+      "ourkronii_skin_04"
+    ],
+    [
+      "ourkronii_skin_05"
+    ],
+    [
+      "ourkronii_skin_06"
+    ],
+    [
+      "ourkronii_skin_07"
+    ],
+    [
       "ourkronii_skin_08"
     ],
     [
-      "nana_mumei_skin_01",
-      "nana_mumei_skin_02",
+      "nana_mumei_skin_01"
+    ],
+    [
+      "nana_mumei_skin_02"
+    ],
+    [
       "nana_mumei_skin_03"
     ],
     [
-      "whatabae_skin_01",
-      "whatabae_skin_02",
-      "whatabae_skin_03",
-      "whatabae_skin_04",
+      "whatabae_skin_01"
+    ],
+    [
+      "whatabae_skin_02"
+    ],
+    [
+      "whatabae_skin_03"
+    ],
+    [
+      "whatabae_skin_04"
+    ],
+    [
       "whatabae_skin_05"
     ],
     [
-      "ShioriNyavella_skin_01",
-      "ShioriNyavella_skin_02",
+      "ShioriNyavella_skin_01"
+    ],
+    [
+      "ShioriNyavella_skin_02"
+    ],
+    [
       "ShioriNyavella_skin_03"
     ],
     [
-      "KosekiBijou_skin_01",
-      "KosekiBijou_skin_02",
-      "KosekiBijou_skin_03",
-      "KosekiBijou_skin_04",
+      "KosekiBijou_skin_01"
+    ],
+    [
+      "KosekiBijou_skin_02"
+    ],
+    [
+      "KosekiBijou_skin_03"
+    ],
+    [
+      "KosekiBijou_skin_04"
+    ],
+    [
       "KosekiBijou_skin_05"
     ],
     [
-      "RissaRavencroft_skin_01",
+      "RissaRavencroft_skin_01"
+    ],
+    [
       "RissaRavencroft_skin_02"
     ],
     [
-      "fluffyFUWAWA_skin_01",
-      "fluffyFUWAWA_skin_02",
-      "fluffyFUWAWA_skin_03",
-      "fluffyFUWAWA_skin_04",
-      "fluffyFUWAWA_skin_05",
+      "fluffyFUWAWA_skin_01"
+    ],
+    [
+      "fluffyFUWAWA_skin_02"
+    ],
+    [
+      "fluffyFUWAWA_skin_03"
+    ],
+    [
+      "fluffyFUWAWA_skin_04"
+    ],
+    [
+      "fluffyFUWAWA_skin_05"
+    ],
+    [
       "fluffyFUWAWA_skin_06"
     ],
     [
-      "fuzzyMOCOCO_skin_01",
-      "fuzzyMOCOCO_skin_02",
-      "fuzzyMOCOCO_skin_03",
+      "fuzzyMOCOCO_skin_01"
+    ],
+    [
+      "fuzzyMOCOCO_skin_02"
+    ],
+    [
+      "fuzzyMOCOCO_skin_03"
+    ],
+    [
       "fuzzyMOCOCO_skin_04"
     ],
     [
-      "ERBloodflame_skin_01",
+      "ERBloodflame_skin_01"
+    ],
+    [
       "ERBloodflame_skin_02"
     ],
     [
       "gigigimurin_skin_01"
     ],
     [
-      "imgreen1_skin_01",
-      "imgreen1_skin_02",
-      "imgreen1_skin_03",
-      "imgreen1_skin_04",
+      "imgreen1_skin_01"
+    ],
+    [
+      "imgreen1_skin_02"
+    ],
+    [
+      "imgreen1_skin_03"
+    ],
+    [
+      "imgreen1_skin_04"
+    ],
+    [
       "imgreen1_skin_05"
     ],
     [
@@ -9412,24 +10065,42 @@
       "Hiodoshi_Ao_skin_01"
     ],
     [
-      "Kanade_ReGLOSS_skin_01",
+      "Kanade_ReGLOSS_skin_01"
+    ],
+    [
       "Kanade_ReGLOSS_skin_02"
     ],
     [
-      "Ichijou_Ririka_skin_01",
+      "Ichijou_Ririka_skin_01"
+    ],
+    [
       "Ichijou_Ririka_skin_02"
     ],
     [
-      "juufuutei_raden_skin_01",
-      "juufuutei_raden_skin_02",
-      "juufuutei_raden_skin_03",
+      "juufuutei_raden_skin_01"
+    ],
+    [
+      "juufuutei_raden_skin_02"
+    ],
+    [
+      "juufuutei_raden_skin_03"
+    ],
+    [
       "juufuutei_raden_skin_04"
     ],
     [
-      "todoroki_hajime_skin_01",
-      "todoroki_hajime_skin_02",
-      "todoroki_hajime_skin_03",
-      "todoroki_hajime_skin_04",
+      "todoroki_hajime_skin_01"
+    ],
+    [
+      "todoroki_hajime_skin_02"
+    ],
+    [
+      "todoroki_hajime_skin_03"
+    ],
+    [
+      "todoroki_hajime_skin_04"
+    ],
+    [
       "todoroki_hajime_skin_05"
     ],
     [
@@ -9439,19 +10110,27 @@
       "koganei_niko_skin_01"
     ],
     [
-      "mizumiya_su_skin_01",
-      "mizumiya_su_skin_02",
+      "mizumiya_su_skin_01"
+    ],
+    [
+      "mizumiya_su_skin_02"
+    ],
+    [
       "mizumiya_su_skin_03"
     ],
     [
-      "rindo_chihaya_skin_01",
+      "rindo_chihaya_skin_01"
+    ],
+    [
       "rindo_chihaya_skin_02"
     ],
     [
       "kikirara_vivi_skin_01"
     ],
     [
-      "minatoaqua_skin_01",
+      "minatoaqua_skin_01"
+    ],
+    [
       "minatoaqua_skin_02"
     ],
     [

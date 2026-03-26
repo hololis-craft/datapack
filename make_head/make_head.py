@@ -101,6 +101,12 @@ ADVANCEMENT_PATH = os.path.join(
     "holoheads",
     "all_heads.json",
 )
+HIDDEN_ADVANCEMENT_PATH = os.path.join(
+    DATAPACK_BASE_DIR,
+    "advancement",
+    "holoheads",
+    "hidden_all_heads.json",
+)
 PLAYER_ADVANCEMENT_DIR = os.path.join(
     DATAPACK_BASE_DIR,
     "advancement",
@@ -188,27 +194,38 @@ def make_loot_table(player_skins):
     return loot_table
 
 
-def make_all_heads_advancement():
+def make_all_heads_advancement_from_texture_values(player_texture_values):
     criteria = {}
     requirements = []
 
     for name_tag in name_tags:
-        criteria[name_tag] = {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": "minecraft:player_head",
-                        "components": {
-                            "minecraft:profile": {
-                                "name": name_tag,
-                            }
-                        },
-                    }
-                ]
-            },
-        }
-        requirements.append([name_tag])
+        texture_values = player_texture_values.get(name_tag, [])
+        criteria_names = []
+        for i, texture_value in enumerate(texture_values, start=1):
+            criterion_name = f"{name_tag}_skin_{i:02}"
+            criteria[criterion_name] = {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                    "items": [
+                        {
+                            "items": "minecraft:player_head",
+                            "components": {
+                                "minecraft:profile": {
+                                    "name": name_tag,
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": texture_value,
+                                        }
+                                    ],
+                                }
+                            },
+                        }
+                    ]
+                },
+            }
+            criteria_names.append(criterion_name)
+        requirements.append(criteria_names)
 
     return {
         "display": {
@@ -228,6 +245,19 @@ def make_all_heads_advancement():
         "requirements": requirements,
         "parent": "hololis:holoheads/root",
     }
+
+
+def make_all_heads_advancement(player_skins):
+    player_texture_values = {}
+
+    for name_tag in name_tags:
+        skins = player_skins.get(name_tag, [])
+        unique_hashes = make_unique_skin_hashes(skins)
+        player_texture_values[name_tag] = [
+            make_texture_value(skin_hash) for skin_hash in unique_hashes
+        ]
+
+    return make_all_heads_advancement_from_texture_values(player_texture_values)
 
 
 def make_unique_skin_hashes(skins):
@@ -320,49 +350,6 @@ def write_player_advancements(player_skins):
         print(f"Done creating player advancement: {path}")
 
 
-def load_player_skins_from_loot_table(path):
-    with open(path, "r", encoding="utf-8") as f:
-        loot_table = json.load(f)
-
-    player_skins = {}
-    entries = loot_table.get("pools", [{}])[0].get("entries", [])
-
-    for entry in entries:
-        components = entry["functions"][0]["components"]
-        profile = components["minecraft:profile"]
-        name_tag = profile["name"]
-        texture_value = profile["properties"][0]["value"]
-        player_skins.setdefault(name_tag, []).append({"texture_value": texture_value})
-
-    return player_skins
-
-
-def make_player_all_heads_advancement_from_loot_table(name_tag, skins):
-    unique_values = []
-    seen = set()
-    for skin in skins:
-        texture_value = skin["texture_value"]
-        if texture_value in seen:
-            continue
-        seen.add(texture_value)
-        unique_values.append(texture_value)
-
-    return make_player_all_heads_advancement_from_texture_values(
-        name_tag, unique_values
-    )
-
-
-def write_player_advancements_from_loot_table(path):
-    player_skins = load_player_skins_from_loot_table(path)
-    for name_tag, skins in player_skins.items():
-        advancement = make_player_all_heads_advancement_from_loot_table(name_tag, skins)
-        if advancement is None:
-            continue
-        output_path = os.path.join(PLAYER_ADVANCEMENT_DIR, f"{name_tag}.json")
-        write_json(output_path, advancement)
-        print(f"Done creating player advancement: {output_path}")
-
-
 def write_json(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -376,8 +363,21 @@ def main():
     write_json(LOOT_TABLE_PATH, loot_table)
     print(f"Done creating loot table: {LOOT_TABLE_PATH}")
 
-    advancement = make_all_heads_advancement()
+    advancement = make_all_heads_advancement(player_skins)
     write_json(ADVANCEMENT_PATH, advancement)
+
+    advancement["requirements"] = [
+        [criterion] for criterion in advancement["criteria"].keys()
+    ]
+    advancement["display"] = {
+        "title": {"translate": "廃課金"},
+        "description": "おいくら程お使いになられましたか？",
+        "icon": {"id": "minecraft:nether_star"},
+        "announce_to_chat": True,
+        "show_toast": True,
+        "frame": "challenge",
+    }
+    write_json(HIDDEN_ADVANCEMENT_PATH, advancement)
     print(f"Done creating advancement: {ADVANCEMENT_PATH}")
     write_player_advancements(player_skins)
 
