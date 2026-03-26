@@ -1,0 +1,198 @@
+{
+  "display": {
+    "title": {
+      "text": "okayu_nekoneko22"
+    },
+    "description": "okayu_nekoneko22 の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "okayu_nekoneko22",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdlZmRhZjQ2NWIyZDhkZjFhNWNkNWE1ODI5NDhlODM4YWJmMzRjMzc5MjIxYzQ0OTRhNzYwNWUzOTE4MTE1YjYifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdlZmRhZjQ2NWIyZDhkZjFhNWNkNWE1ODI5NDhlODM4YWJmMzRjMzc5MjIxYzQ0OTRhNzYwNWUzOTE4MTE1YjYifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg4OGI2MWU1YjkwN2VkNzU0Yjc4ZmFiY2E4NTg0Nzk4NjRkYTdkZTc4MjI2YWI3MzQ0ZTQwN2RjY2U1YTA0MGMifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_03": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcwZDJiNTg3ZmRmZTNjNzQyMzJjMTRiYmEwYjdjOTEzZTkyZjc1ODkxMGEyMGUxNmU0ZDFhODY3MzMwMjAyMTkifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_04": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZlMzA3ZGY1Mjc4MzVkMTFjODQxMjRkZWQ3ZDBmNmRhNzczMjMyY2M3ZTUxZGJkMzM4ZTAyZDcyYzYyZTRjMzYifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_05": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4ZmQ3ZjNmNTg5NWFiZWNhZjYxNGI3ODFjNTcyOTU2NmI2NTA4MjJiZTNlNjQyMzUwZGNmM2RkZDU1MDFkZTAifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_06": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkzYzQyNDRhNDA5ZGZhYzIyZWI4OGRlYjgwNDM4NmRiMDNjNmVmN2NiYTUyMjk2NzAzNDk3ZGI4YWEwNzJlNTgifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_07": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "okayu_nekoneko22",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FmNDY1NzZhYWYzZDIxYjA2ZTI3YzA2ZTQ2ZWI0MjY1YmRhODljNjQzZjgxODE3MTYzYTYyMjE3NzliNDMzNDkifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ],
+    [
+      "skin_03"
+    ],
+    [
+      "skin_04"
+    ],
+    [
+      "skin_05"
+    ],
+    [
+      "skin_06"
+    ],
+    [
+      "skin_07"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

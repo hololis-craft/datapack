@@ -1,0 +1,222 @@
+{
+  "display": {
+    "title": {
+      "text": "Towasama"
+    },
+    "description": "Towasama の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "Towasama",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VkZTBhYzA1ZWNjNGRiNDdkODkyYWJjN2Q1NzE1ZDUzZTE0NjFjYzhhYzAxOWUwMjRkOGFmNWRjZjMzNmRkMzIifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VkZTBhYzA1ZWNjNGRiNDdkODkyYWJjN2Q1NzE1ZDUzZTE0NjFjYzhhYzAxOWUwMjRkOGFmNWRjZjMzNmRkMzIifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg5M2E1OWE0NjdmNDYxOTM3MWE5ZDcwMmI0YzUzZGEwMWYwMDc4MTE2YWM1ZmU2ZTMzYTVhYWNkOWJmNTgyMzYifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_03": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QxMzQ5MDNmNDc4Njg2NWRkYzA1MGE0NDNjNTlhYmFlOWMwMTRkMjJkNzMwMGI2MzIzZGYzMjhmNjQ1ZGYzNjcifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_04": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdjNThkODZmZmFjNjVmY2NhYWExOWMwNDM5OTBiYTQ3OWJiODdjN2MyNjkzN2I0NjY1MWEyYzhkOWI5M2I3OTcifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_05": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUyMjQ0NjBmNTc2NDA5ODI3MGEzNTY1ZGI3NmU2ZTNmNjQ5N2UwYTljMGUyN2MxOTU3MzYxYWZkOTk0YjIyYTUifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_06": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhkMTdmOTUwYzRlYjRlMGIyNDEwZWMyMjdlMWMyNGY1YThkNjBmNDA3MGQwMjhmZWU4YzNlZTlkZGY4OWNmZDAifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_07": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I3NmU3YTU1MjJmMGQxYWM3OWMxOWYxMWViYzBiYzg1ZjY3ZmU4YWZiZDlmYTkyYmM2ODIwMWRlZDM4NWRiOTMifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_08": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "Towasama",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc2ZDRmYTVlZTU4MGFkYzQzNzdiZmViMzNiZTRmZTIyMzAyOWMzMDk1NWZjODJmNGE4ZjIyZWU0ODNkMzVhYTYifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ],
+    [
+      "skin_03"
+    ],
+    [
+      "skin_04"
+    ],
+    [
+      "skin_05"
+    ],
+    [
+      "skin_06"
+    ],
+    [
+      "skin_07"
+    ],
+    [
+      "skin_08"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

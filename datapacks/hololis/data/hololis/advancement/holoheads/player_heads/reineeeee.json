@@ -1,0 +1,150 @@
+{
+  "display": {
+    "title": {
+      "text": "reineeeee"
+    },
+    "description": "reineeeee の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "reineeeee",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UzMzZmNjQ2NDc2NGFhYTM3NWM4MjAwZGMzZjg2MzQ4MjdkNzZiNWJhZWZkNzVkZmI5NzM1MTI1OWY5OTZkNWUifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "reineeeee",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UzMzZmNjQ2NDc2NGFhYTM3NWM4MjAwZGMzZjg2MzQ4MjdkNzZiNWJhZWZkNzVkZmI5NzM1MTI1OWY5OTZkNWUifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "reineeeee",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzNhMDZlNGE3Yjk5YTc2ZmFlMTlmNTcwYmE5OGYyOGE2YzYxMTExOTJkNGY1ZjdkOGQzNTUzYjFjMDIwZjMyZWEifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_03": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "reineeeee",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkyYzM5Njg5NGVlMGFmNzI3MWM5Y2ViMTA1N2MxYzNkMDlkMTc2YjdjZjc3NTc0MmNjNzA4MjQ4M2QwZGUxMzYifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_04": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "reineeeee",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI3MDEzZDgzMTA4OWRmMGFiMDYyNTZiY2M0NzI0MjA3M2Y1OWU2ZDAyYTc0NWY0NDY2ZmRmNTdiZWI3MDkzY2YifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_05": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "reineeeee",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgzZGExN2ViYTQxNmEzZTJmNTE5Y2U1YjhjYWQxODZkNmU2ZTI2NGE5ZjdjNmMzYWM2MmZhZWVmNzA2YmRkYTgifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ],
+    [
+      "skin_03"
+    ],
+    [
+      "skin_04"
+    ],
+    [
+      "skin_05"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

@@ -1,0 +1,198 @@
+{
+  "display": {
+    "title": {
+      "text": "botaaan"
+    },
+    "description": "botaaan の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "botaaan",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E5MzFjN2NiMjFlMTM0ODQ4OWUxY2IzMjI0NmZjZTFmZDhhOTAwNTkzYzA5NTdkZWI5Njg0MjgxNzk2ZWM0N2UifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E5MzFjN2NiMjFlMTM0ODQ4OWUxY2IzMjI0NmZjZTFmZDhhOTAwNTkzYzA5NTdkZWI5Njg0MjgxNzk2ZWM0N2UifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiYTI2ZWQ4YTk5MzQxZmFlMGU5YzI2MGJmNTY4YzgyMGIxYzljZmRiMTg3MTQwMzE4YmRkNGJjZjJkMDU5M2UifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_03": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQxOWU1NzJhY2Y5MGNiZTE0ODNkOTc3ZjI0OThkODlkZDIxOTBjZmFiNGEwOWQwZGMzYjNiYTU4NjI2ZTY5YmQifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_04": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NmYTFjZmZkNjM1OTNmZGViM2EzMjhhOWM5MzI1MGZhMDNjOTkwNDJkMzU0NDljMzFmYmNmMzM5YWJmOTU4MjMifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_05": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE2MDFjODEyZjAzOTdjODIxMzlhYjZiYWVhNjE0ZTY5ZmQ4YWEzZTU2M2I1NzQzN2E5ZmUwODc5NTc2ZjZiNTEifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_06": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgwMWYyNWM5NmY0ZTYwOTA0OTRhZjA4NjJkYTcwMzg3ZTYxZTQyNTE3NTQxMDJhOGM4NGMyMGFmYTQ0YmNmODEifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_07": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "botaaan",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YwM2Y5ODdmNDk5Njk5ZTU1ZDQxOTQxYWRlZGIxMDU5OWEwNmZiNDdmZTk2OTg5MWZhOGE5MmE2NjI5MWI0OTgifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ],
+    [
+      "skin_03"
+    ],
+    [
+      "skin_04"
+    ],
+    [
+      "skin_05"
+    ],
+    [
+      "skin_06"
+    ],
+    [
+      "skin_07"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

@@ -1,0 +1,102 @@
+{
+  "display": {
+    "title": {
+      "text": "yuzukichoco"
+    },
+    "description": "yuzukichoco の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "yuzukichoco",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU2OGQ4YWUyZTA2ZTlmZjIxZWQ4M2Y1MGFkY2EzZjIzZmUzYTA5OWVmNDE1ZGYwZWM2OWVmMWY1YTNkZWJkYiJ9fX0="
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "yuzukichoco",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU2OGQ4YWUyZTA2ZTlmZjIxZWQ4M2Y1MGFkY2EzZjIzZmUzYTA5OWVmNDE1ZGYwZWM2OWVmMWY1YTNkZWJkYiJ9fX0="
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "yuzukichoco",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiNWFmNzNlNTc3ZjBjNTQyODEzYTM0ODU4ZjkxNmE3YzUxNTFjMGRjNjg5ODExZGEwN2QzYjE3ZjRkYTc1OGEifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_03": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "yuzukichoco",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYxZDhiNDY4OGRlMjRhZGQxY2E5MDZlZDhhMmJlYTlmM2E1Y2UyNDE2ZDI5OGUyNWJlMDcyY2UwM2I1MGE2NTEifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ],
+    [
+      "skin_03"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

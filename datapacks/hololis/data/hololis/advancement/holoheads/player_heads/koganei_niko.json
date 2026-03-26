@@ -1,0 +1,54 @@
+{
+  "display": {
+    "title": {
+      "text": "koganei_niko"
+    },
+    "description": "koganei_niko の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "koganei_niko",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRjYmY1ODc2MjZkNjYxMWZkNjlmN2ViZDYxMGE4NjMxMjI1OWFhZGRmZmJhOWI0NDJhZjAyYWIwMWJkMTAwZGMifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "koganei_niko",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRjYmY1ODc2MjZkNjYxMWZkNjlmN2ViZDYxMGE4NjMxMjI1OWFhZGRmZmJhOWI0NDJhZjAyYWIwMWJkMTAwZGMifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}

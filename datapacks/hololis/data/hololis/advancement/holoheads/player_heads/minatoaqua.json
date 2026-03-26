@@ -1,0 +1,78 @@
+{
+  "display": {
+    "title": {
+      "text": "minatoaqua"
+    },
+    "description": "minatoaqua の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "minatoaqua",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY2OWY0NDE2Yzg1MzIwZDc5OTkwNjEwMWQ0ZWYwZTU0MmQ4YmNjZDMwMmRmZmIwMGU4ZjAxNTMzMjc0ZjY0OGIifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "minatoaqua",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY2OWY0NDE2Yzg1MzIwZDc5OTkwNjEwMWQ0ZWYwZTU0MmQ4YmNjZDMwMmRmZmIwMGU4ZjAxNTMzMjc0ZjY0OGIifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "minatoaqua",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg1NTNmNTRlZTRhODg2NGI3ZDUyMmQ1Y2E5MjUxNmNlOWU5ZjlhNGFlOGJmM2ZkZDJkMzliZmI3NDM2NGQ4MjgifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ]
+  ],
+  "parent": "hololis:holomem/root"
+}
