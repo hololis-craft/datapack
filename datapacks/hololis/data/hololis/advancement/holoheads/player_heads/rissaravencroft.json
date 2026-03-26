@@ -1,0 +1,78 @@
+{
+  "display": {
+    "title": {
+      "text": "RissaRavencroft"
+    },
+    "description": "RissaRavencroft の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "RissaRavencroft",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UxNzg3NjU5Y2IxNGUxNDRiNTUyODU5MTdkOWY1Y2Q5M2NlNGE2NGQ4MWZhZTNjZGM3NWJhZTljMjlkOGYxOWUifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "RissaRavencroft",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UxNzg3NjU5Y2IxNGUxNDRiNTUyODU5MTdkOWY1Y2Q5M2NlNGE2NGQ4MWZhZTNjZGM3NWJhZTljMjlkOGYxOWUifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "RissaRavencroft",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NmNzFhNWViMzhkYmVkYWFiNTFkOWQ5MzU1OGYzNTJhN2E3ZWZhNWJiM2JiMGQwNGNkMjY2YWViMTI2OGU3MTkifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ]
+  ],
+  "parent": "hololis:holoheads/each"
+}

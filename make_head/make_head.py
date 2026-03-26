@@ -226,7 +226,7 @@ def make_all_heads_advancement():
         },
         "criteria": criteria,
         "requirements": requirements,
-        "parent": "hololis:holomem/root",
+        "parent": "hololis:holoheads/root",
     }
 
 
@@ -298,7 +298,7 @@ def make_player_all_heads_advancement_from_texture_values(name_tag, texture_valu
         },
         "criteria": criteria,
         "requirements": requirements,
-        "parent": "hololis:holomem/root",
+        "parent": "hololis:holoheads/each",
     }
 
 
@@ -315,7 +315,7 @@ def write_player_advancements(player_skins):
         advancement = make_player_all_heads_advancement(name_tag, skins)
         if advancement is None:
             continue
-        path = os.path.join(PLAYER_ADVANCEMENT_DIR, f"{name_tag}.json")
+        path = os.path.join(PLAYER_ADVANCEMENT_DIR, f"{name_tag.lower()}.json")
         write_json(path, advancement)
         print(f"Done creating player advancement: {path}")
 

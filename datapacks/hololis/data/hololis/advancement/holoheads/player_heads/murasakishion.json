@@ -170,5 +170,5 @@
       "skin_06"
     ]
   ],
-  "parent": "hololis:holomem/root"
+  "parent": "hololis:holoheads/each"
 }

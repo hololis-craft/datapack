@@ -1,0 +1,78 @@
+{
+  "display": {
+    "title": {
+      "text": "ERBloodflame"
+    },
+    "description": "ERBloodflame の頭を全種類集める",
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "ERBloodflame",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5NGMyOWI5ZTg3N2U0NmYwMzY3MjFmMmNhYTQ5YjU2ZmI2NGNmNTkyZGE2NWQ0ZDgwMGJkZjM5MTU5ZmJmN2QifX19"
+            }
+          ]
+        },
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "announce_to_chat": true,
+    "show_toast": true
+  },
+  "criteria": {
+    "skin_01": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "ERBloodflame",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5NGMyOWI5ZTg3N2U0NmYwMzY3MjFmMmNhYTQ5YjU2ZmI2NGNmNTkyZGE2NWQ0ZDgwMGJkZjM5MTU5ZmJmN2QifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "skin_02": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:player_head",
+            "components": {
+              "minecraft:profile": {
+                "name": "ERBloodflame",
+                "properties": [
+                  {
+                    "name": "textures",
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk0ZDhiYWRmNDZhZjBhODAzM2MzZWYzYmY4ODc0Y2NkZTFmMjE1MjIyMmFiNWZhYTliZDM4NDFjZjRhYTg1YjkifX19"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skin_01"
+    ],
+    [
+      "skin_02"
+    ]
+  ],
+  "parent": "hololis:holoheads/each"
+}

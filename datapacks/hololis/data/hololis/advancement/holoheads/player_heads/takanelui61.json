@@ -12,7 +12,7 @@
           "properties": [
             {
               "name": "textures",
-              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjNDNhZTQ4NzY4OGRmNTBlODZmYWY3MTkxMjgyNzM0NDIyODY0N2M2YTNhYTZkZTJjM2ZkYzU5ODg2ZDZiMTcifX19"
+              "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYTk1ZmNjMWExMzA4YmUwMGI0ZTk2NGJhNjY4YzU4OWQyYWU0YWRmM2M2MmJiNDk3NTUxMDNhMmM0ZWQ1MSJ9fX0="
             }
           ]
         },
@@ -35,7 +35,7 @@
                 "properties": [
                   {
                     "name": "textures",
-                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjNDNhZTQ4NzY4OGRmNTBlODZmYWY3MTkxMjgyNzM0NDIyODY0N2M2YTNhYTZkZTJjM2ZkYzU5ODg2ZDZiMTcifX19"
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYTk1ZmNjMWExMzA4YmUwMGI0ZTk2NGJhNjY4YzU4OWQyYWU0YWRmM2M2MmJiNDk3NTUxMDNhMmM0ZWQ1MSJ9fX0="
                   }
                 ]
               }
@@ -56,7 +56,7 @@
                 "properties": [
                   {
                     "name": "textures",
-                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IyMDVjZTRiNjNhYjRmZDI1NjI3ZDllNmZlZWY1MmVmZjVlNjg1M2Q2OGE3ZTlhZWFjNGNiYTA5ODFmODNkYzQifX19"
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjNDNhZTQ4NzY4OGRmNTBlODZmYWY3MTkxMjgyNzM0NDIyODY0N2M2YTNhYTZkZTJjM2ZkYzU5ODg2ZDZiMTcifX19"
                   }
                 ]
               }
@@ -77,7 +77,7 @@
                 "properties": [
                   {
                     "name": "textures",
-                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYTk1ZmNjMWExMzA4YmUwMGI0ZTk2NGJhNjY4YzU4OWQyYWU0YWRmM2M2MmJiNDk3NTUxMDNhMmM0ZWQ1MSJ9fX0="
+                    "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IyMDVjZTRiNjNhYjRmZDI1NjI3ZDllNmZlZWY1MmVmZjVlNjg1M2Q2OGE3ZTlhZWFjNGNiYTA5ODFmODNkYzQifX19"
                   }
                 ]
               }
@@ -266,5 +266,5 @@
       "skin_10"
     ]
   ],
-  "parent": "hololis:holomem/root"
+  "parent": "hololis:holoheads/each"
 }

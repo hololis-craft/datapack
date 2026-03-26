@@ -74,5 +74,5 @@
       "skin_02"
     ]
   ],
-  "parent": "hololis:holomem/root"
+  "parent": "hololis:holoheads/each"
 }

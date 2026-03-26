@@ -1,0 +1,32 @@
+{
+  "display": {
+    "title": {
+      "text": "それぞれのホロメン",
+      "color": "blue"
+    },
+    "description": [
+      {
+        "text": "ホロメンの頭を集めると…？",
+        "color": "blue"
+      }
+    ],
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "criteria": {
+    "": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "effects": {
+            "glowing": {}
+          }
+        }
+      }
+    }
+  },
+  "parent": "hololis:holoheads/root"
+}

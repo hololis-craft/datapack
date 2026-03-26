@@ -4695,6 +4695,26 @@
                   "properties": [
                     {
                       "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYTk1ZmNjMWExMzA4YmUwMGI0ZTk2NGJhNjY4YzU4OWQyYWU0YWRmM2M2MmJiNDk3NTUxMDNhMmM0ZWQ1MSJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "name": "takanelui61",
+                  "properties": [
+                    {
+                      "name": "textures",
                       "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJjNDNhZTQ4NzY4OGRmNTBlODZmYWY3MTkxMjgyNzM0NDIyODY0N2M2YTNhYTZkZTJjM2ZkYzU5ODg2ZDZiMTcifX19"
                     }
                   ]
@@ -4716,26 +4736,6 @@
                     {
                       "name": "textures",
                       "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IyMDVjZTRiNjNhYjRmZDI1NjI3ZDllNmZlZWY1MmVmZjVlNjg1M2Q2OGE3ZTlhZWFjNGNiYTA5ODFmODNkYzQifX19"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "name": "takanelui61",
-                  "properties": [
-                    {
-                      "name": "textures",
-                      "value": "eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYzYTk1ZmNjMWExMzA4YmUwMGI0ZTk2NGJhNjY4YzU4OWQyYWU0YWRmM2M2MmJiNDk3NTUxMDNhMmM0ZWQ1MSJ9fX0="
                     }
                   ]
                 }
