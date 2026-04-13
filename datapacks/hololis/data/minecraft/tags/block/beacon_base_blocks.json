@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:barrier",
+    "minecraft:tnt",
+    "minecraft:bedrock",
+    "minecraft:cobbled_deepslate",
+    "minecraft:lapis_block"
+  ]
+}
